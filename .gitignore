@@ -24,3 +24,7 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# Library tables
+sym-lib-table
+fp-lib-table
