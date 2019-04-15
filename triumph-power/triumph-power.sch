@@ -15,39 +15,22 @@ Comment3 "Ray Sun"
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Transformer_1P_SS T1
-U 1 1 5CAD2984
-P 4000 4100
-F 0 "T1" H 4000 4550 50  0000 C CNN
-F 1 "Transformer_1P_SS" H 4000 4450 50  0000 C CNN
-F 2 "" H 4000 4100 50  0001 C CNN
-F 3 "~" H 4000 4100 50  0001 C CNN
-	1    4000 4100
-	1    0    0    -1  
-$EndComp
-Text Notes 3600 4450 0    50   ~ 0
-120VAC - 18VAC-CT
-$Comp
 L Device:Fuse F1
 U 1 1 5CAD42D4
-P 3100 3900
-F 0 "F1" V 2903 3900 50  0000 C CNN
-F 1 "2A SLOW" V 2994 3900 50  0000 C CNN
-F 2 "" V 3030 3900 50  0001 C CNN
-F 3 "~" H 3100 3900 50  0001 C CNN
-	1    3100 3900
+P 3050 4000
+F 0 "F1" V 2853 4000 50  0000 C CNN
+F 1 "2A SLOW" V 2944 4000 50  0000 C CNN
+F 2 "" V 2980 4000 50  0001 C CNN
+F 3 "~" H 3050 4000 50  0001 C CNN
+	1    3050 4000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4400 3900 4500 3900
-Wire Wire Line
-	4500 3900 4500 3800
+	4500 3400 4500 3800
 Wire Wire Line
 	4500 3800 4950 3800
 Wire Wire Line
-	4400 4300 4500 4300
-Wire Wire Line
-	4500 4300 4500 4400
+	4500 4800 4500 4400
 Wire Wire Line
 	4500 4400 4950 4400
 $Comp
@@ -548,8 +531,6 @@ AC Input
 Text Notes 1300 1600 0    50   ~ 0
 Dual DC Output
 Wire Notes Line
-	500  2600 2700 2600
-Wire Notes Line
 	2700 2600 2700 500 
 Text Notes 5200 2900 0    50   ~ 10
 120VAC -> +/-12VDC DUAL POWER SUPPLY
@@ -618,24 +599,12 @@ Wire Wire Line
 	2000 4000 2300 4000
 Wire Wire Line
 	2000 4200 2300 4200
-Wire Wire Line
-	2950 3900 2850 3900
-Wire Wire Line
-	2850 3900 2850 4000
-Wire Wire Line
-	2850 4000 2700 4000
-Wire Wire Line
-	2700 4200 2850 4200
-Wire Wire Line
-	2850 4200 2850 4300
 Text Notes 6400 5400 0    50   ~ 0
 TO-220 WITH HEATSINK
 Text Notes 1550 4450 0    50   ~ 0
 IEC WITH FILTER
-Text Notes 2350 4650 0    50   ~ 0
+Text Notes 2350 4450 0    50   ~ 0
 WITH LED
-Text Notes 3800 4550 0    50   ~ 0
-PK-PK
 $Comp
 L Device:D_Bridge_+AA- D?
 U 1 1 5CB22998
@@ -650,11 +619,98 @@ $EndComp
 Wire Wire Line
 	4650 4500 5600 4500
 Wire Wire Line
-	3250 3900 3600 3900
-Wire Wire Line
-	2850 4300 3600 4300
+	3200 4000 3600 4000
 Wire Notes Line
-	3500 500  3500 7800
+	3400 2600 3400 7800
 Text Notes 1600 2900 0    50   ~ 10
 OFF BOARD
+$Comp
+L Transformer:TRANSF6 TR?
+U 1 1 5CB5F308
+P 4000 3700
+F 0 "TR?" H 4000 4182 50  0000 C CNN
+F 1 "TRANSF6" H 4000 4091 50  0000 C CNN
+F 2 "" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0001 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4800 4500 4800
+Wire Wire Line
+	4200 3400 4500 3400
+Wire Wire Line
+	4200 3600 4200 3700
+Wire Wire Line
+	4200 4500 4200 4600
+Wire Wire Line
+	4200 3900 4200 4100
+Wire Wire Line
+	4200 4100 4400 4100
+Connection ~ 4200 4100
+Wire Wire Line
+	4200 4100 4200 4300
+Connection ~ 4650 4100
+Connection ~ 4400 4100
+Wire Wire Line
+	4400 4100 4650 4100
+Text Notes 3750 5150 0    50   ~ 0
+115VACrms -\n16VACrms 800mA\nx2
+Wire Wire Line
+	3800 3900 3650 3900
+Wire Wire Line
+	3650 3900 3650 4200
+Wire Wire Line
+	2700 4000 2900 4000
+Wire Wire Line
+	2700 4200 3650 4200
+Text Notes 3700 5350 0    50   ~ 0
+Glen's transformers
+$Comp
+L Transformer:TRANSF6 TR?
+U 1 1 5CB61215
+P 4000 4600
+F 0 "TR?" H 4000 5082 50  0000 C CNN
+F 1 "TRANSF6" H 4000 4991 50  0000 C CNN
+F 2 "" H 4000 4600 50  0001 C CNN
+F 3 "" H 4000 4600 50  0001 C CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4000 3600 4300
+Wire Wire Line
+	3600 4300 3800 4300
+Wire Wire Line
+	3650 4200 3650 4500
+Wire Wire Line
+	3650 4500 3800 4500
+Connection ~ 3650 4200
+Wire Wire Line
+	3800 3700 3600 3700
+Wire Wire Line
+	3600 3700 3600 4000
+Connection ~ 3600 4000
+Wire Wire Line
+	3600 3700 3600 3400
+Wire Wire Line
+	3600 3400 3800 3400
+Connection ~ 3600 3700
+Wire Wire Line
+	3800 3600 3650 3600
+Wire Wire Line
+	3650 3600 3650 3900
+Connection ~ 3650 3900
+Wire Wire Line
+	3650 4500 3650 4800
+Wire Wire Line
+	3650 4800 3800 4800
+Connection ~ 3650 4500
+Wire Wire Line
+	3800 4600 3600 4600
+Wire Wire Line
+	3600 4600 3600 4300
+Connection ~ 3600 4300
+Wire Notes Line
+	500  2600 3400 2600
 $EndSCHEMATC
