@@ -1,0 +1,216 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Triumph Analog Function Generator - Main Board"
+Date "2019-04-15"
+Rev "A"
+Comp "California Institute of Technology"
+Comment1 "Analog Electronics Project Laboratory"
+Comment2 "EE 90"
+Comment3 "Ray Sun"
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5CADBEA4
+P 1450 1350
+F 0 "J2" H 1530 1392 50  0000 L CNN
+F 1 "ScrewTerm_5mm_01x03" H 1530 1301 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 1450 1350 50  0001 C CNN
+F 3 "~" H 1450 1350 50  0001 C CNN
+	1    1450 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5CAF6EE6
+P 9900 1450
+F 0 "R1" H 9968 1496 50  0000 L CNN
+F 1 "1k" H 9968 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9940 1440 50  0001 C CNN
+F 3 "~" H 9900 1450 50  0001 C CNN
+	1    9900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D6
+U 1 1 5CB05CD0
+P 9900 1850
+F 0 "D6" V 9939 1732 50  0000 R CNN
+F 1 "RED" V 9848 1732 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9900 1850 50  0001 C CNN
+F 3 "~" H 9900 1850 50  0001 C CNN
+	1    9900 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5CB066BF
+P 9900 2100
+F 0 "#PWR013" H 9900 1850 50  0001 C CNN
+F 1 "GND" H 9900 1950 50  0000 C CNN
+F 2 "" H 9900 2100 50  0001 C CNN
+F 3 "" H 9900 2100 50  0001 C CNN
+	1    9900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1600 9900 1700
+Wire Wire Line
+	9900 2000 9900 2100
+$Comp
+L power:+12V #PWR012
+U 1 1 5CB0914D
+P 9900 1200
+F 0 "#PWR012" H 9900 1050 50  0001 C CNN
+F 1 "+12V" H 9915 1373 50  0000 C CNN
+F 2 "" H 9900 1200 50  0001 C CNN
+F 3 "" H 9900 1200 50  0001 C CNN
+	1    9900 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1200 9900 1300
+$Comp
+L power:+12V #PWR02
+U 1 1 5CB0B043
+P 1200 1200
+F 0 "#PWR02" H 1200 1050 50  0001 C CNN
+F 1 "+12V" H 1215 1373 50  0000 C CNN
+F 2 "" H 1200 1200 50  0001 C CNN
+F 3 "" H 1200 1200 50  0001 C CNN
+	1    1200 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CB0B46E
+P 1100 1500
+F 0 "#PWR03" H 1100 1250 50  0001 C CNN
+F 1 "GND" H 1100 1350 50  0000 C CNN
+F 2 "" H 1100 1500 50  0001 C CNN
+F 3 "" H 1100 1500 50  0001 C CNN
+	1    1100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR01
+U 1 1 5CB0B799
+P 950 1200
+F 0 "#PWR01" H 950 1300 50  0001 C CNN
+F 1 "-12V" H 965 1373 50  0000 C CNN
+F 2 "" H 950 1200 50  0001 C CNN
+F 3 "" H 950 1200 50  0001 C CNN
+	1    950  1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1350 1100 1500
+Text Notes 10000 700  0    50   ~ 10
+INDICATORS
+Text Notes 10100 800  0    50   ~ 0
+Power
+Wire Notes Line
+	9300 500  9300 2600
+Wire Notes Line
+	9300 2600 11200 2600
+Text Notes 1300 900  0    50   ~ 0
+Dual DC Input
+Wire Notes Line
+	500  2600 2700 2600
+Wire Notes Line
+	2700 2600 2700 450 
+$Comp
+L Device:R_US R2
+U 1 1 5CB2E5D3
+P 10400 1450
+F 0 "R2" H 10468 1496 50  0000 L CNN
+F 1 "1k" H 10468 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10440 1440 50  0001 C CNN
+F 3 "~" H 10400 1450 50  0001 C CNN
+	1    10400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D7
+U 1 1 5CB2E5D9
+P 10400 1850
+F 0 "D7" V 10347 1929 50  0000 L CNN
+F 1 "RED" V 10438 1929 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10400 1850 50  0001 C CNN
+F 3 "~" H 10400 1850 50  0001 C CNN
+	1    10400 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5CB2E5DF
+P 10400 2100
+F 0 "#PWR015" H 10400 1850 50  0001 C CNN
+F 1 "GND" H 10400 1950 50  0000 C CNN
+F 2 "" H 10400 2100 50  0001 C CNN
+F 3 "" H 10400 2100 50  0001 C CNN
+	1    10400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 1600 10400 1700
+Wire Wire Line
+	10400 1200 10400 1300
+$Comp
+L power:-12V #PWR014
+U 1 1 5CB304E7
+P 10400 1200
+F 0 "#PWR014" H 10400 1300 50  0001 C CNN
+F 1 "-12V" H 10415 1373 50  0000 C CNN
+F 2 "" H 10400 1200 50  0001 C CNN
+F 3 "" H 10400 1200 50  0001 C CNN
+	1    10400 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 2000 10400 2100
+Text Notes 1300 700  0    50   ~ 10
+CONNECTORS
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5CB568D5
+P 1500 2100
+F 0 "J?" H 1600 2075 50  0000 L CNN
+F 1 "Conn_BNC" H 1600 1984 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 1500 2100 50  0001 C CNN
+F 3 " ~" H 1500 2100 50  0001 C CNN
+	1    1500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB5726A
+P 1500 2300
+F 0 "#PWR?" H 1500 2050 50  0001 C CNN
+F 1 "GND" H 1500 2150 50  0000 C CNN
+F 2 "" H 1500 2300 50  0001 C CNN
+F 3 "" H 1500 2300 50  0001 C CNN
+	1    1500 2300
+	1    0    0    -1  
+$EndComp
+Text Label 900  2100 0    50   ~ 0
+SIG_OUT
+Wire Wire Line
+	900  2100 1300 2100
+Text Notes 1300 1900 0    50   ~ 0
+Signal Output
+Wire Wire Line
+	950  1200 950  1250
+Wire Wire Line
+	950  1250 1250 1250
+Wire Wire Line
+	1100 1350 1250 1350
+Wire Wire Line
+	1200 1200 1200 1450
+Wire Wire Line
+	1200 1450 1250 1450
+$EndSCHEMATC
