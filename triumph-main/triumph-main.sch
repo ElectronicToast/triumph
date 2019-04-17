@@ -119,9 +119,7 @@ Wire Notes Line
 Text Notes 1300 900  0    50   ~ 0
 Dual DC Input
 Wire Notes Line
-	500  2600 2700 2600
-Wire Notes Line
-	2700 2600 2700 450 
+	2700 7750 2700 550 
 $Comp
 L Device:R_US R2
 U 1 1 5CB2E5D3
@@ -330,4 +328,79 @@ F 3 "" H 10300 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10300 1200 10300 1300
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5CB775BB
+P 1550 4300
+F 0 "J?" H 1630 4342 50  0000 L CNN
+F 1 "JST_PH_vert_01x03" H 1630 4251 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 1550 4300 50  0001 C CNN
+F 3 "~" H 1550 4300 50  0001 C CNN
+	1    1550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5CB77B92
+P 1300 4150
+F 0 "#PWR?" H 1300 4000 50  0001 C CNN
+F 1 "+12V" H 1315 4323 50  0000 C CNN
+F 2 "" H 1300 4150 50  0001 C CNN
+F 3 "" H 1300 4150 50  0001 C CNN
+	1    1300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5CB77B9C
+P 1050 4150
+F 0 "#PWR?" H 1050 4250 50  0001 C CNN
+F 1 "-12V" H 1065 4323 50  0000 C CNN
+F 2 "" H 1050 4150 50  0001 C CNN
+F 3 "" H 1050 4150 50  0001 C CNN
+	1    1050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4150 1300 4200
+Wire Wire Line
+	1300 4200 1350 4200
+Wire Wire Line
+	1050 4150 1050 4300
+Wire Wire Line
+	1050 4300 1350 4300
+Text Label 1000 4400 0    50   ~ 0
+DC_OFF
+Wire Wire Line
+	1000 4400 1350 4400
+Text Notes 1250 3800 0    50   ~ 0
+DC Offset Pot
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5CB7B512
+P 1550 3250
+F 0 "J?" H 1630 3292 50  0000 L CNN
+F 1 "JST_PH_vert_01x03" H 1630 3201 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 1550 3250 50  0001 C CNN
+F 3 "~" H 1550 3250 50  0001 C CNN
+	1    1550 3250
+	1    0    0    -1  
+$EndComp
+Text Label 1000 3350 0    50   ~ 0
+APL_2
+Wire Wire Line
+	1000 3350 1350 3350
+Text Notes 1250 2850 0    50   ~ 0
+Amplitude Pot
+Text Notes 650  7700 0    50   ~ 0
+ALL POT CONN JST PH 3P\n1    END\n2    END\n3    WIPER
+Text Label 1000 3150 0    50   ~ 0
+APL_1
+Wire Wire Line
+	1000 3150 1350 3150
+NoConn ~ 1350 3250
+Text Notes 1650 4500 0    50   ~ 0
+10K
+Text Notes 1650 3450 0    50   ~ 0
+10K
 $EndSCHEMATC
