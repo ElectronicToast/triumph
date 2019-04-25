@@ -60,7 +60,7 @@ F 3 "" H 1100 1700 50  0001 C CNN
 $EndComp
 Text Notes 14600 800  0    100  ~ 20
 INDICATORS
-Text Notes 14100 900  0    50   ~ 6
+Text Notes 14100 900  0    50   ~ 10
 Power (onboard)
 Wire Notes Line
 	13600 500  13600 2600
@@ -103,7 +103,7 @@ F 3 "" H 3000 1400 50  0001 C CNN
 	1    3000 1400
 	1    0    0    -1  
 $EndComp
-Text Label 2400 1200 0    50   ~ 6
+Text Label 2400 1200 0    50   ~ 0
 SIG_OUT
 Wire Wire Line
 	2400 1200 2800 1200
@@ -150,9 +150,9 @@ Wire Notes Line
 	10000 500  10000 2600
 Wire Notes Line
 	10000 2600 16500 2600
-Text Notes 15300 900  0    50   ~ 6
+Text Notes 15300 900  0    50   ~ 10
 Power (external)
-Text Notes 15200 2500 0    50   ~ 6
+Text Notes 15200 2500 0    50   ~ 0
 Mount on enclosure
 $Comp
 L power:GND #PWR046
@@ -198,23 +198,23 @@ F 3 "" H 900 8600 50  0001 C CNN
 	1    900  8600
 	1    0    0    -1  
 $EndComp
-Text Label 1000 8900 0    50   ~ 6
+Text Label 1000 8900 0    50   ~ 0
 OFFSET
 Text Notes 1100 8300 0    50   ~ 10
 DC Offset Dial
 Text Notes 1100 7200 0    50   ~ 10
 Amplitude Dial
-Text Notes 1600 9000 0    50   ~ 6
+Text Notes 1600 9000 0    50   ~ 0
 10k POT
-Text Notes 10350 2500 0    50   ~ 6
+Text Notes 10350 2500 0    50   ~ 0
 FIND FOOTPRINT
-Text Notes 10900 2150 0    50   ~ 6
+Text Notes 10900 2150 0    50   ~ 0
 ELECTROLYTIC
-Text Notes 15800 2200 0    50   ~ 6
+Text Notes 15800 2200 0    50   ~ 0
 JST XH 01x02
 Text Notes 10300 9700 0    50   ~ 10
 FOOTPRINTS\n\nALL SMD PASSIVES\nALL SMD LEDs \nALL SINGLE/DUAL OPAMPS
-Text Notes 11500 9700 0    50   ~ 6
+Text Notes 11500 9700 0    50   ~ 0
 0805\n1206\nDIP8 Socket
 $Comp
 L Regulator_Linear:L79L05_SOT89 U2
@@ -454,17 +454,17 @@ F 3 "" H 11600 1700 50  0001 C CNN
 	1    11600 1700
 	1    0    0    -1  
 $EndComp
-Text Notes 10400 900  0    50   ~ 6
+Text Notes 10400 900  0    50   ~ 10
 Input Bypass
-Text Notes 12050 900  0    50   ~ 6
+Text Notes 12050 900  0    50   ~ 10
 +/-12V -> +/- 5V
 Text Notes 10300 9900 0    50   ~ 10
 NOTES
-Text Notes 10300 10350 0    50   ~ 6
+Text Notes 10300 10350 0    50   ~ 0
 If have time, use the AC/DC converter design.\nOtherwise integrate 12VDC input through a\nwall wart, panel mount rocker switch, board\nmount PTC fuse, and switching converter to\n+/- 12VDC
-Text Notes 3200 1600 0    50   ~ 6
+Text Notes 3200 1600 0    50   ~ 0
 FIND BOARD MOUNT \nFOOTPRINT
-Text Notes 600  10400 0    50   ~ 6
+Text Notes 600  10400 0    50   ~ 10
 ALL POT CONN JST PH 3P\n1    END\n2    END\n3    WIPER
 $Comp
 L power:GND #PWR040
@@ -512,9 +512,9 @@ F 3 "~" H 13800 7600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13700 7600 13500 7600
-Text Notes 1600 7700 0    50   ~ 6
+Text Notes 1600 7700 0    50   ~ 0
 100k POT\n
-Text Label 900  7600 0    50   ~ 6
+Text Label 900  7600 0    50   ~ 0
 APL_2
 $Comp
 L Connector_Generic:Conn_01x03 J6
@@ -527,7 +527,7 @@ F 3 "~" H 1500 7500 50  0001 C CNN
 	1    1500 7500
 	1    0    0    -1  
 $EndComp
-Text Label 900  7400 0    50   ~ 6
+Text Label 900  7400 0    50   ~ 0
 APL_1
 Wire Wire Line
 	900  7400 1300 7400
@@ -679,21 +679,8 @@ Wire Wire Line
 	12900 6100 12900 5700
 Wire Wire Line
 	12900 5700 12800 5700
-Text Label 15700 4100 0    50   ~ 6
+Text Label 15700 4100 0    50   ~ 0
 SIG_OUT
-$Comp
-L Device:R_Small_US R19
-U 1 1 5CC62AC6
-P 15500 4100
-F 0 "R19" V 15600 4100 50  0000 C CNN
-F 1 "50" V 15400 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15500 4100 50  0001 C CNN
-F 3 "~" H 15500 4100 50  0001 C CNN
-	1    15500 4100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	16000 4100 15600 4100
 $Comp
 L power:GND #PWR028
 U 1 1 5CC6B71B
@@ -705,10 +692,8 @@ F 3 "" H 11900 5400 50  0001 C CNN
 	1    11900 5400
 	1    0    0    -1  
 $EndComp
-Text Notes 12000 5100 0    50   ~ 6
+Text Notes 12000 5100 0    50   ~ 10
 Output DC Offset + Buffer
-Text Notes 14500 4700 0    50   ~ 6
-Impedance matching???
 $Comp
 L Device:R_Small_US R14
 U 1 1 5CC70FDA
@@ -723,7 +708,7 @@ $EndComp
 Wire Wire Line
 	11900 6100 12100 6100
 Connection ~ 12100 6100
-Text Label 11400 6100 0    50   ~ 6
+Text Label 11400 6100 0    50   ~ 0
 OFFSET
 Wire Wire Line
 	11400 6100 11700 6100
@@ -774,9 +759,9 @@ F 3 "~" H 12300 4500 50  0001 C CNN
 	1    12300 4500
 	0    -1   -1   0   
 $EndComp
-Text Label 12500 4500 0    50   ~ 6
+Text Label 12500 4500 0    50   ~ 0
 APL_1
-Text Label 12800 4500 0    50   ~ 6
+Text Label 12800 4500 0    50   ~ 0
 APL_2
 Wire Wire Line
 	12200 4500 12100 4500
@@ -804,9 +789,9 @@ Wire Wire Line
 Wire Wire Line
 	13300 4100 13100 4100
 Connection ~ 13100 4100
-Text Notes 12000 3400 0    50   ~ 6
+Text Notes 12000 3400 0    50   ~ 10
 Output Amplitude Control
-Text Label 11100 4200 0    50   ~ 6
+Text Label 11100 4200 0    50   ~ 0
 SIG_PREOUT
 Wire Wire Line
 	11100 4200 11700 4200
@@ -875,15 +860,15 @@ F 3 "~" H 3400 5000 50  0001 C CNN
 	1    3400 5000
 	1    0    0    -1  
 $EndComp
-Text Notes 2800 4600 0    50   ~ 6
+Text Notes 2800 4600 0    50   ~ 10
 Output Select Dial
-Text Label 2700 5300 0    50   ~ 6
+Text Label 2700 5300 0    50   ~ 0
 SIG_PREOUT
-Text Label 2900 4800 0    50   ~ 6
+Text Label 2900 4800 0    50   ~ 0
 SIG_SIN
-Text Label 2900 4900 0    50   ~ 6
+Text Label 2900 4900 0    50   ~ 0
 SIG_SQR
-Text Label 2900 5000 0    50   ~ 6
+Text Label 2900 5000 0    50   ~ 0
 SIG_TRI
 Wire Wire Line
 	2900 4800 3200 4800
@@ -908,15 +893,15 @@ Wire Wire Line
 	2600 5000 2800 5000
 Wire Wire Line
 	2800 5100 3200 5100
-Text Notes 12000 6500 0    50   ~ 6
+Text Notes 12000 6500 0    50   ~ 0
 IF WANT R2R
-Text Notes 12000 6800 0    50   ~ 6
+Text Notes 12000 6800 0    50   ~ 0
 TLV272\nLM6132
-Text Notes 12200 3500 0    50   ~ 6
+Text Notes 12200 3500 0    50   ~ 0
 Inverting Amp
-Text Notes 12900 4000 0    50   ~ 6
+Text Notes 12900 4000 0    50   ~ 0
 Gain adjustable from \n0.25 to 12
-Text Notes 12000 5200 0    50   ~ 6
+Text Notes 12000 5200 0    50   ~ 0
 Unity gain summing amp
 $Comp
 L Device:R_Small_US R11
@@ -943,15 +928,15 @@ $EndComp
 Wire Wire Line
 	11300 4800 11600 4800
 Connection ~ 11600 4800
-Text Notes 10400 4200 0    50   ~ 6
+Text Notes 10400 4200 0    50   ~ 0
 SIG_PREOUT
-Text Notes 10000 3900 2    50   ~ 6
+Text Notes 10000 3900 2    50   ~ 0
 SIG_SIN
-Text Notes 10000 4100 2    50   ~ 6
+Text Notes 10000 4100 2    50   ~ 0
 SIG_SQR
-Text Notes 10000 4300 2    50   ~ 6
+Text Notes 10000 4300 2    50   ~ 0
 SIG_TRI
-Text Notes 10000 4500 2    50   ~ 6
+Text Notes 10000 4500 2    50   ~ 0
 GND (DC)
 Wire Notes Line
 	10400 4150 10200 4150
@@ -967,9 +952,9 @@ Wire Notes Line
 	10200 3850 10200 4450
 Text Notes 12500 3100 0    100  ~ 20
 OUTPUT AMPLITUDE / OFFSET
-Text Notes 10000 5000 0    50   ~ 6
+Text Notes 10000 5000 0    50   ~ 0
 Off board
-Text Notes 9900 3400 0    50   ~ 6
+Text Notes 9900 3400 0    50   ~ 0
 SP4T SWITCH
 $Comp
 L Amplifier_Operational:TL072 U3
@@ -1087,11 +1072,11 @@ F 3 "~" H 1500 6400 50  0001 C CNN
 	1    1500 6400
 	1    0    0    -1  
 $EndComp
-Text Label 1100 6500 0    50   ~ 6
+Text Label 1100 6500 0    50   ~ 0
 DC
 Text Notes 1100 5600 0    50   ~ 10
 Duty Cycle Dial
-Text Notes 1600 6600 0    50   ~ 6
+Text Notes 1600 6600 0    50   ~ 0
 10k POT
 Wire Wire Line
 	900  6400 1300 6400
@@ -1125,7 +1110,7 @@ F 3 "" H 900 5900 50  0001 C CNN
 	1    900  5900
 	1    0    0    -1  
 $EndComp
-Text Label 5100 6700 0    50   ~ 6
+Text Label 5100 6700 0    50   ~ 0
 DC
 $Comp
 L Device:R_Small_US R2
@@ -1153,9 +1138,9 @@ Wire Wire Line
 	900  5900 900  6000
 Wire Wire Line
 	1200 5900 1200 6000
-Text Notes 1500 6100 0    50   ~ 6
+Text Notes 1500 6100 0    50   ~ 0
 Design resistance to \nvary over amplitude of \nsine signal
-Text Label 5100 6500 0    50   ~ 6
+Text Label 5100 6500 0    50   ~ 0
 SIG_SIN
 $Comp
 L Regulator_Linear:L78L05_SOT89 U1
@@ -1172,14 +1157,12 @@ Wire Wire Line
 	11600 1700 11900 1700
 Wire Wire Line
 	11300 4900 11300 4800
-Text Notes 6100 7400 0    50   ~ 6
+Text Notes 6100 7400 0    50   ~ 0
 Find a better comparator?
-Text Notes 14500 4900 0    50   ~ 6
+Text Notes 14500 4900 0    50   ~ 0
 If want 1/4W out, need 1206\nand probably a beefier amp
-Text Label 8000 2800 0    50   ~ 6
+Text Label 8000 2800 0    50   ~ 0
 SIG_SIN
-Wire Wire Line
-	15400 4100 15300 4100
 Wire Wire Line
 	14600 4200 14500 4200
 Wire Wire Line
@@ -1228,7 +1211,7 @@ $EndComp
 Wire Wire Line
 	15300 5700 15500 5700
 Connection ~ 15300 5700
-Text Notes 14700 3400 0    50   ~ 6
+Text Notes 14700 3400 0    50   ~ 10
 Output Buffer
 $Comp
 L Amplifier_Operational:TL072 U5
@@ -1376,7 +1359,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 14900 5700 50  0001 C CNN
 	2    14900 5700
 	1    0    0    -1  
 $EndComp
-Text Notes 700  4900 0    50   ~ 6
+Text Notes 700  4900 0    50   ~ 0
 3P4T PANEL MOUNT ROTARY SWITCH
 $Comp
 L Connector_Generic:Conn_01x06 J4
@@ -1413,15 +1396,15 @@ F 3 "~" H 1500 2600 50  0001 C CNN
 $EndComp
 Text Notes 800  2200 0    50   ~ 10
 Frequency Range Rotary Switch
-Text Label 900  2400 0    50   ~ 6
+Text Label 900  2400 0    50   ~ 0
 FC1_1
-Text Label 900  2500 0    50   ~ 6
+Text Label 900  2500 0    50   ~ 0
 FC1_2
-Text Label 900  2600 0    50   ~ 6
+Text Label 900  2600 0    50   ~ 0
 FC1_3
-Text Label 900  2700 0    50   ~ 6
+Text Label 900  2700 0    50   ~ 0
 FC1_4
-Text Label 900  2900 0    50   ~ 6
+Text Label 900  2900 0    50   ~ 0
 FC1_COM
 Wire Wire Line
 	2800 5000 2800 5100
@@ -1438,19 +1421,19 @@ Wire Wire Line
 	900  2700 1300 2700
 Wire Wire Line
 	900  2900 1300 2900
-Text Notes 1700 3000 0    50   ~ 6
+Text Notes 1700 3000 0    50   ~ 0
 Wien bridge \ncap 1
-Text Notes 1700 3800 0    50   ~ 6
+Text Notes 1700 3800 0    50   ~ 0
 Wien bridge \ncap 2\n
-Text Label 900  3200 0    50   ~ 6
+Text Label 900  3200 0    50   ~ 0
 FC2_1
-Text Label 900  3300 0    50   ~ 6
+Text Label 900  3300 0    50   ~ 0
 FC2_2
-Text Label 900  3400 0    50   ~ 6
+Text Label 900  3400 0    50   ~ 0
 FC2_3
-Text Label 900  3500 0    50   ~ 6
+Text Label 900  3500 0    50   ~ 0
 FC2_4
-Text Label 900  3700 0    50   ~ 6
+Text Label 900  3700 0    50   ~ 0
 FC2_COM
 Wire Wire Line
 	900  3200 1300 3200
@@ -1462,15 +1445,15 @@ Wire Wire Line
 	900  3500 1300 3500
 Wire Wire Line
 	900  3700 1300 3700
-Text Label 900  4000 0    50   ~ 6
+Text Label 900  4000 0    50   ~ 0
 INTC_1
-Text Label 900  4100 0    50   ~ 6
+Text Label 900  4100 0    50   ~ 0
 INTC_2
-Text Label 900  4200 0    50   ~ 6
+Text Label 900  4200 0    50   ~ 0
 INTC_3
-Text Label 900  4300 0    50   ~ 6
+Text Label 900  4300 0    50   ~ 0
 INTC_4
-Text Label 900  4500 0    50   ~ 6
+Text Label 900  4500 0    50   ~ 0
 INTC_COM
 Wire Wire Line
 	900  4000 1300 4000
@@ -1484,15 +1467,15 @@ Wire Wire Line
 	900  4500 1300 4500
 Text Notes 9600 3100 0    100  ~ 20
 OUTPUT SELECT
-Text Notes 1700 4600 0    50   ~ 6
+Text Notes 1700 4600 0    50   ~ 0
 Integrator \ncap select\n
-Text Notes 2500 1800 0    50   ~ 6
+Text Notes 2500 1800 0    50   ~ 0
 Board mount BNC receptacle
 Text Notes 3000 2800 0    50   ~ 10
 Frequency Dial
-Text Notes 3500 3400 0    50   ~ 6
+Text Notes 3500 3400 0    50   ~ 0
 100k\n
-Text Label 2800 3300 0    50   ~ 6
+Text Label 2800 3300 0    50   ~ 0
 FR1_2
 $Comp
 L Connector_Generic:Conn_01x03 J9
@@ -1512,13 +1495,13 @@ Wire Wire Line
 Connection ~ 3200 3100
 Wire Wire Line
 	2800 3300 3200 3300
-Text Notes 3100 4100 0    50   ~ 6
+Text Notes 3100 4100 0    50   ~ 0
 2G POT
-Text Label 2800 3100 0    50   ~ 6
+Text Label 2800 3100 0    50   ~ 0
 FR1_1
-Text Notes 3500 3900 0    50   ~ 6
+Text Notes 3500 3900 0    50   ~ 0
 100k\n
-Text Label 2800 3800 0    50   ~ 6
+Text Label 2800 3800 0    50   ~ 0
 FR2_2
 $Comp
 L Connector_Generic:Conn_01x03 J10
@@ -1538,7 +1521,7 @@ Wire Wire Line
 Connection ~ 3200 3600
 Wire Wire Line
 	2800 3800 3200 3800
-Text Label 2800 3600 0    50   ~ 6
+Text Label 2800 3600 0    50   ~ 0
 FR2_1
 Wire Notes Line
 	3400 3400 3400 3500
@@ -1551,7 +1534,7 @@ Wire Wire Line
 Connection ~ 12900 5700
 Wire Wire Line
 	5100 6500 5500 6500
-Text Label 6600 6800 0    50   ~ 6
+Text Label 6600 6800 0    50   ~ 0
 SIG_SQR
 Wire Wire Line
 	5100 6700 5500 6700
@@ -1572,15 +1555,15 @@ Wire Notes Line
 	1500 3000 1500 3100
 Wire Notes Line
 	1500 3800 1500 3900
-Text Notes 2500 5700 0    50   ~ 6
+Text Notes 2500 5700 0    50   ~ 0
 SP4T PANEL MOUNT ROTARY SWITCH
-Text Notes 3500 4800 0    50   ~ 6
+Text Notes 3500 4800 0    50   ~ 0
 SINE
-Text Notes 3500 4900 0    50   ~ 6
+Text Notes 3500 4900 0    50   ~ 0
 SQUARE
-Text Notes 3500 5000 0    50   ~ 6
+Text Notes 3500 5000 0    50   ~ 0
 TRIANGLE
-Text Notes 3500 5100 0    50   ~ 6
+Text Notes 3500 5100 0    50   ~ 0
 DC
 $Comp
 L Amplifier_Operational:TL072 U4
@@ -1695,11 +1678,11 @@ F 3 "" H 11300 7600 50  0001 C CNN
 	1    11300 7600
 	1    0    0    -1  
 $EndComp
-Text Notes 14100 8100 0    50   ~ 6
+Text Notes 14100 8100 0    50   ~ 0
 6.8uF tantalum\nVERIFY FOOTPRINT
-Text Label 7500 2200 0    50   ~ 6
+Text Label 7500 2200 0    50   ~ 0
 FR2_1
-Text Label 7900 2200 0    50   ~ 6
+Text Label 7900 2200 0    50   ~ 0
 FR2_2
 Text Notes 6100 800  0    100  ~ 20
 SINE GENERATOR
@@ -1749,13 +1732,13 @@ F 3 "~" H 6900 2200 50  0001 C CNN
 	1    6900 2200
 	0    1    1    0   
 $EndComp
-Text Label 6100 1600 0    50   ~ 6
+Text Label 6100 1600 0    50   ~ 0
 FC2_1
-Text Label 6100 1800 0    50   ~ 6
+Text Label 6100 1800 0    50   ~ 0
 FC2_2
-Text Label 6100 2000 0    50   ~ 6
+Text Label 6100 2000 0    50   ~ 0
 FC2_3
-Text Label 6100 2200 0    50   ~ 6
+Text Label 6100 2200 0    50   ~ 0
 FC2_4
 Wire Wire Line
 	6100 1600 6500 1600
@@ -1783,7 +1766,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 1600 7100 1800
 Connection ~ 7100 1800
-Text Label 5600 2200 0    50   ~ 6
+Text Label 5600 2200 0    50   ~ 0
 FC2_COM
 Wire Wire Line
 	6000 2200 5600 2200
@@ -1802,7 +1785,7 @@ F 3 "~" H 7300 2200 50  0001 C CNN
 	1    7300 2200
 	0    -1   -1   0   
 $EndComp
-Text Notes 7600 1700 0    50   ~ 6
+Text Notes 7600 1700 0    50   ~ 0
 DETERMINE VALUES
 Wire Wire Line
 	7600 2800 7800 2800
@@ -1818,7 +1801,7 @@ Wire Wire Line
 Connection ~ 7800 2800
 Wire Wire Line
 	7800 2800 8300 2800
-Text Label 6000 3600 3    50   ~ 6
+Text Label 6000 3600 3    50   ~ 0
 FC1_COM
 $Comp
 L Device:C_Small C8
@@ -1870,11 +1853,11 @@ Wire Wire Line
 Connection ~ 6000 2700
 Wire Wire Line
 	6000 2700 6500 2700
-Text Label 5400 3500 1    50   ~ 6
+Text Label 5400 3500 1    50   ~ 0
 FC1_2
-Text Label 5700 3500 1    50   ~ 6
+Text Label 5700 3500 1    50   ~ 0
 FC1_3
-Text Label 6000 3500 1    50   ~ 6
+Text Label 6000 3500 1    50   ~ 0
 FC1_4
 Wire Wire Line
 	5400 3500 5400 3200
@@ -1893,9 +1876,9 @@ F 3 "~" H 6500 3100 50  0001 C CNN
 	1    6500 3100
 	1    0    0    -1  
 $EndComp
-Text Label 6500 3500 1    50   ~ 6
+Text Label 6500 3500 1    50   ~ 0
 FR1_1
-Text Label 6500 3600 3    50   ~ 6
+Text Label 6500 3600 3    50   ~ 0
 FR1_2
 Wire Wire Line
 	6500 3500 6500 3200
@@ -1987,7 +1970,7 @@ F 3 "~" H 7200 9000 50  0001 C CNN
 	1    7200 9000
 	0    1    1    0   
 $EndComp
-Text Label 6400 8400 0    50   ~ 6
+Text Label 6400 8400 0    50   ~ 0
 INTC_1
 Wire Wire Line
 	6400 8400 6800 8400
@@ -2001,15 +1984,15 @@ Wire Wire Line
 	7400 8800 7000 8800
 Wire Wire Line
 	7000 8400 7400 8400
-Text Label 5900 9000 0    50   ~ 6
+Text Label 5900 9000 0    50   ~ 0
 INTC_COM
 Wire Wire Line
 	6300 9000 5900 9000
-Text Label 6400 8600 0    50   ~ 6
+Text Label 6400 8600 0    50   ~ 0
 INTC_2
-Text Label 6400 8800 0    50   ~ 6
+Text Label 6400 8800 0    50   ~ 0
 INTC_3
-Text Label 6400 9000 0    50   ~ 6
+Text Label 6400 9000 0    50   ~ 0
 INTC_4
 Text Notes 5800 7900 0    100  ~ 20
 TRIANGLE GENERATOR
@@ -2065,16 +2048,16 @@ Wire Wire Line
 Wire Wire Line
 	5900 9700 5800 9700
 Connection ~ 5900 9700
-Text Label 5200 9700 0    50   ~ 6
+Text Label 5200 9700 0    50   ~ 0
 SIG_SQR
-Text Label 7500 9600 0    50   ~ 6
+Text Label 7500 9600 0    50   ~ 0
 SIG_TRI
 Wire Wire Line
 	5200 9700 5600 9700
 Wire Wire Line
 	7800 9600 7400 9600
 Connection ~ 7400 9600
-Text Notes 7700 8400 0    50   ~ 6
+Text Notes 7700 8400 0    50   ~ 0
 DETERMINE VALUES
 $Comp
 L Device:D_Small_ALT D1
@@ -3763,22 +3746,22 @@ DC 83 BB EF C6 DD 77 A3 68 51 1B 5A 12 11 79 19 C7 27 22 22 22 17 CA CC 44 5A DA
 44 74 27 FE 1F 20 F3 5C FE E5 76 2E 42 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 5900 1200 0    50   ~ 6
+Text Notes 5900 1200 0    50   ~ 0
 Wien bridge with selectable frequency decade\ncapacitors, dual gang frequency potentiometer,\nand JFET AGC
 Wire Wire Line
 	3200 5200 2800 5200
 Wire Wire Line
 	2800 5200 2800 5100
 Connection ~ 2800 5100
-Text Notes 14700 6000 0    50   ~ 6
+Text Notes 14700 6000 0    50   ~ 0
 Not used
-Text Notes 7500 6900 0    50   ~ 6
+Text Notes 7500 6900 0    50   ~ 0
 Not used
-Text Notes 14400 6500 0    50   ~ 6
+Text Notes 14400 6500 0    50   ~ 0
 Maybe use to buffer OFFSET
 Wire Wire Line
 	5000 3000 5000 3500
-Text Label 5000 3500 1    50   ~ 6
+Text Label 5000 3500 1    50   ~ 0
 FC1_1
 $Comp
 L Device:C_Small C7
@@ -3822,7 +3805,7 @@ F 3 "~" H 6300 6800 50  0001 C CNN
 	1    6300 6800
 	1    0    0    -1  
 $EndComp
-Text Notes 6500 7000 0    50   ~ 6
+Text Notes 6500 7000 0    50   ~ 0
 TRIM
 $Bitmap
 Pos 14450 9575
@@ -4262,4 +4245,33 @@ C0 00 00 00 24 08 60 00 00 00 12 04 30 00 00 00 09 02 18 00 00 80 04 01 0C 00 00
 94 B4 3A 6F 3F 87 ED 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Device:R_Small_US R?
+U 1 1 5CC5F4BC
+P 15500 4300
+F 0 "R?" H 15568 4346 50  0000 L CNN
+F 1 "10k" H 15568 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15500 4300 50  0001 C CNN
+F 3 "~" H 15500 4300 50  0001 C CNN
+	1    15500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC5F4C2
+P 15500 4400
+F 0 "#PWR?" H 15500 4150 50  0001 C CNN
+F 1 "GND" H 15500 4250 50  0000 C CNN
+F 2 "" H 15500 4400 50  0001 C CNN
+F 3 "" H 15500 4400 50  0001 C CNN
+	1    15500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15500 4200 15500 4100
+Wire Wire Line
+	15300 4100 15500 4100
+Wire Wire Line
+	15500 4100 16000 4100
+Connection ~ 15500 4100
 $EndSCHEMATC
