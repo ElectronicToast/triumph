@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:triumph-cache
 EELAYER 29 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Main Board"
-Date "2019-04-21"
+Date "2019-04-30"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -4203,7 +4204,7 @@ L Device:R_Small_US R?
 U 1 1 5CC5F4BC
 P 15500 4300
 F 0 "R?" H 15568 4346 50  0000 L CNN
-F 1 "10k" H 15568 4255 50  0000 L CNN
+F 1 "50" H 15568 4255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15500 4300 50  0001 C CNN
 F 3 "~" H 15500 4300 50  0001 C CNN
 	1    15500 4300
@@ -4332,12 +4333,12 @@ Connection ~ 12100 1700
 $Comp
 L power:VCC #PWR?
 U 1 1 5CE6C414
-P 8900 1500
-F 0 "#PWR?" H 8900 1350 50  0001 C CNN
-F 1 "VCC" H 8950 1700 50  0000 C CNN
-F 2 "" H 8900 1500 50  0001 C CNN
-F 3 "" H 8900 1500 50  0001 C CNN
-	1    8900 1500
+P 8900 1100
+F 0 "#PWR?" H 8900 950 50  0001 C CNN
+F 1 "VCC" H 8950 1300 50  0000 C CNN
+F 2 "" H 8900 1100 50  0001 C CNN
+F 3 "" H 8900 1100 50  0001 C CNN
+	1    8900 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -4406,4 +4407,19 @@ Wire Wire Line
 	9300 1500 9600 1500
 Text Notes 9400 2300 0    50   ~ 0
 AFTER DETERMING CURRENT REQUIREMENTS
+$Comp
+L Device:Polyfuse F?
+U 1 1 5CC98A84
+P 8900 1300
+F 0 "F?" H 9000 1400 50  0000 L CNN
+F 1 "PTC_500mA" H 9000 1300 50  0000 L CNN
+F 2 "" H 8950 1100 50  0001 L CNN
+F 3 "~" H 8900 1300 50  0001 C CNN
+	1    8900 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 1450 8900 1500
+Wire Wire Line
+	8900 1150 8900 1100
 $EndSCHEMATC
