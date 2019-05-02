@@ -62,29 +62,29 @@ CONNECTORS
 $Comp
 L Connector:Conn_Coaxial J8
 U 1 1 5CB568D5
-P 3000 1200
-F 0 "J8" H 3100 1175 50  0000 L CNN
-F 1 "Conn_BNC" H 3100 1084 50  0000 L CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 3000 1200 50  0001 C CNN
-F 3 " ~" H 3000 1200 50  0001 C CNN
-	1    3000 1200
+P 3100 1300
+F 0 "J8" H 3200 1275 50  0000 L CNN
+F 1 "Conn_BNC" H 3200 1184 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 3100 1300 50  0001 C CNN
+F 3 " ~" H 3100 1300 50  0001 C CNN
+	1    3100 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5CB5726A
-P 3000 1400
-F 0 "#PWR09" H 3000 1150 50  0001 C CNN
-F 1 "GND" H 3000 1250 50  0000 C CNN
-F 2 "" H 3000 1400 50  0001 C CNN
-F 3 "" H 3000 1400 50  0001 C CNN
-	1    3000 1400
+P 3100 1500
+F 0 "#PWR09" H 3100 1250 50  0001 C CNN
+F 1 "GND" H 3100 1350 50  0000 C CNN
+F 2 "" H 3100 1500 50  0001 C CNN
+F 3 "" H 3100 1500 50  0001 C CNN
+	1    3100 1500
 	1    0    0    -1  
 $EndComp
-Text Label 2400 1200 0    50   ~ 0
+Text Label 2500 1300 0    50   ~ 0
 SIG_OUT
 Wire Wire Line
-	2400 1200 2800 1200
+	2500 1300 2900 1300
 Text Notes 2800 1000 0    50   ~ 10
 Signal Output
 $Comp
@@ -165,7 +165,7 @@ F 3 "" H 900 8400 50  0001 C CNN
 	1    900  8400
 	1    0    0    -1  
 $EndComp
-Text Label 1000 9000 0    50   ~ 0
+Text Label 1000 8900 0    50   ~ 0
 OFFSET
 Text Notes 1100 8100 0    50   ~ 10
 DC Offset Dial
@@ -427,10 +427,10 @@ Text Notes 10300 9900 0    50   ~ 10
 NOTES
 Text Notes 10300 10350 0    50   ~ 0
 If have time, use the AC/DC converter design.\nOtherwise integrate 12VDC input through a\nwall wart, panel mount rocker switch, board\nmount PTC fuse, and switching converter to\n+/- 12VDC
-Text Notes 3200 1600 0    50   ~ 0
+Text Notes 3300 1700 0    50   ~ 0
 FIND BOARD MOUNT \nFOOTPRINT
 Text Notes 600  10400 0    50   ~ 10
-ALL POT CONN JST PH 3P\n1    END\n2    END\n3    WIPER
+ALL POT CONN JST PH 3P\n1    END\n2    WIPER\n3    END
 $Comp
 L power:GND #PWR040
 U 1 1 5CC25D71
@@ -503,10 +503,6 @@ Wire Wire Line
 	900  7600 1300 7600
 Wire Wire Line
 	900  8400 900  8500
-Wire Wire Line
-	900  8900 1300 8900
-Wire Wire Line
-	1000 9000 1300 9000
 Wire Wire Line
 	1200 8400 1200 8500
 Wire Wire Line
@@ -921,22 +917,16 @@ F 3 "~" H 1500 6400 50  0001 C CNN
 	1    1500 6400
 	1    0    0    -1  
 $EndComp
-Text Label 1100 6500 0    50   ~ 0
+Text Label 1000 6400 0    50   ~ 0
 SYMM
 Text Notes 1100 5600 0    50   ~ 10
 Symmetry Dial
 Text Notes 1600 6600 0    50   ~ 0
 10k POT
 Wire Wire Line
-	900  6400 1300 6400
-Wire Wire Line
-	1100 6500 1300 6500
-Wire Wire Line
 	1200 6300 1300 6300
 Wire Wire Line
 	1200 6200 1200 6300
-Wire Wire Line
-	900  6200 900  6400
 $Comp
 L Device:R_Small_US R2
 U 1 1 5CC509BA
@@ -1184,7 +1174,7 @@ Wire Wire Line
 	2700 4800 2700 4900
 Text Notes 9000 5100 0    100  ~ 20
 OUTPUT SELECT
-Text Notes 2500 1800 0    50   ~ 0
+Text Notes 2600 1900 0    50   ~ 0
 Board mount BNC receptacle
 Text Notes 1100 2600 0    50   ~ 10
 Frequency Dials
@@ -3997,8 +3987,6 @@ F 3 "~" H 900 8600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 8800 1200 8700
-Wire Wire Line
-	900  8900 900  8700
 Text Notes 11000 5400 0    50   ~ 0
 NECESSARY?
 $Comp
@@ -4113,4 +4101,16 @@ Wire Wire Line
 Connection ~ 7100 4300
 Wire Wire Line
 	7100 4300 6900 4300
+Wire Wire Line
+	900  9000 1300 9000
+Wire Wire Line
+	900  8700 900  9000
+Wire Wire Line
+	1000 8900 1300 8900
+Wire Wire Line
+	1000 6400 1300 6400
+Wire Wire Line
+	900  6500 1300 6500
+Wire Wire Line
+	900  6200 900  6500
 $EndSCHEMATC
