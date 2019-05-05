@@ -6,7 +6,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Main Board"
-Date "2019-05-02"
+Date "2019-05-05"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -918,9 +918,9 @@ F 3 "~" H 1500 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1000 6400 0    50   ~ 0
-SYMM
+DC
 Text Notes 1100 5600 0    50   ~ 10
-Symmetry Dial
+Duty Cycle Dial
 Text Notes 1600 6600 0    50   ~ 0
 10k POT
 Wire Wire Line
@@ -970,7 +970,7 @@ Wire Wire Line
 	12100 1800 12400 1800
 Wire Wire Line
 	11300 4900 11300 4800
-Text Label 6800 2800 0    50   ~ 0
+Text Label 7000 2400 0    50   ~ 0
 SIG_SQR
 Wire Wire Line
 	14600 4200 14500 4200
@@ -1174,12 +1174,12 @@ Text Notes 9000 5100 0    100  ~ 20
 OUTPUT SELECT
 Text Notes 2600 1900 0    50   ~ 0
 Board mount BNC receptacle
-Text Notes 1100 2600 0    50   ~ 10
+Text Notes 1900 2500 0    50   ~ 10
 Frequency Dials
 Text Notes 1600 3300 0    50   ~ 0
 100k\n
 Text Label 900  3200 0    50   ~ 0
-FR1_2
+FR_2
 $Comp
 L Connector_Generic:Conn_01x03 J9
 U 1 1 5CE45835
@@ -1199,31 +1199,7 @@ Connection ~ 1300 3000
 Wire Wire Line
 	900  3200 1300 3200
 Text Label 900  3000 0    50   ~ 0
-FR1_1
-Text Notes 1600 4200 0    50   ~ 0
-1k\n
-Text Label 900  4100 0    50   ~ 0
-FR2_2
-$Comp
-L Connector_Generic:Conn_01x03 J10
-U 1 1 5CE51977
-P 1500 4000
-F 0 "J10" H 1580 4042 50  0000 L CNN
-F 1 "JST_PH_vert_01x03" H 1580 3951 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 1500 4000 50  0001 C CNN
-F 3 "~" H 1500 4000 50  0001 C CNN
-	1    1500 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	900  3900 1300 3900
-Wire Wire Line
-	1300 4000 1300 3900
-Connection ~ 1300 3900
-Wire Wire Line
-	900  4100 1300 4100
-Text Label 900  3900 0    50   ~ 0
-FR2_1
+FR_1
 Wire Wire Line
 	12900 5700 13900 5700
 Wire Wire Line
@@ -1244,12 +1220,12 @@ DC
 $Comp
 L Amplifier_Operational:TL072 U4
 U 1 1 5CF9B072
-P 6400 2800
-F 0 "U4" H 6400 3167 50  0000 C CNN
-F 1 "TL052CP" H 6400 3076 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6400 2800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6400 2800 50  0001 C CNN
-	1    6400 2800
+P 6500 2400
+F 0 "U4" H 6500 2767 50  0000 C CNN
+F 1 "TL052CP" H 6500 2676 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6500 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6500 2400 50  0001 C CNN
+	1    6500 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1345,14 +1321,8 @@ F 3 "" H 12400 7600 50  0001 C CNN
 $EndComp
 Text Notes 14100 8100 0    50   ~ 0
 6.8uF tantalum\nVERIFY FOOTPRINT
-Text Label 6000 3400 0    50   ~ 0
-FR2_1
-Text Label 5600 3400 0    50   ~ 0
-FR2_2
 Text Notes 5300 800  0    100  ~ 20
 SQUARE-TRIANGLE GENERATOR
-Text Notes 6100 1200 0    50   ~ 0
-DETERMINE VALUES
 Text Notes 6000 7600 0    100  ~ 20
 TRIANGLE - SINE SHAPER
 Text Label 7700 9000 0    50   ~ 0
@@ -3569,12 +3539,12 @@ $EndComp
 $Comp
 L Device:D_Small_ALT D?
 U 1 1 5CD16FFC
-P 6700 9200
-F 0 "D?" V 6650 9050 50  0000 L CNN
-F 1 "1N4148" V 6750 8850 50  0000 L CNN
-F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6700 9200 50  0001 C CNN
-F 3 "~" V 6700 9200 50  0001 C CNN
-	1    6700 9200
+P 6700 9100
+F 0 "D?" V 6650 8950 50  0000 L CNN
+F 1 "1N4148" V 6750 8750 50  0000 L CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6700 9100 50  0001 C CNN
+F 3 "~" V 6700 9100 50  0001 C CNN
+	1    6700 9100
 	0    -1   -1   0   
 $EndComp
 Text Label 5700 8200 0    50   ~ 0
@@ -3582,12 +3552,12 @@ SIG_TRI
 $Comp
 L Device:R_Small_US R?
 U 1 1 5CD68F06
-P 6300 8400
-F 0 "R?" H 6368 8446 50  0000 L CNN
-F 1 "100K" H 6368 8355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 8400 50  0001 C CNN
-F 3 "~" H 6300 8400 50  0001 C CNN
-	1    6300 8400
+P 6300 8500
+F 0 "R?" H 6368 8546 50  0000 L CNN
+F 1 "100K" H 6368 8455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 8500 50  0001 C CNN
+F 3 "~" H 6300 8500 50  0001 C CNN
+	1    6300 8500
 	1    0    0    -1  
 $EndComp
 Text Notes 6400 9900 0    50   ~ 0
@@ -3595,23 +3565,23 @@ NEED 6V AMPLT TRI
 $Comp
 L Device:D_Small_ALT D?
 U 1 1 5CD6AA20
-P 6700 8400
-F 0 "D?" V 6654 8468 50  0000 L CNN
-F 1 "1N4148" V 6745 8468 50  0000 L CNN
-F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6700 8400 50  0001 C CNN
-F 3 "~" V 6700 8400 50  0001 C CNN
-	1    6700 8400
+P 6700 8500
+F 0 "D?" V 6654 8568 50  0000 L CNN
+F 1 "1N4148" V 6745 8568 50  0000 L CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6700 8500 50  0001 C CNN
+F 3 "~" V 6700 8500 50  0001 C CNN
+	1    6700 8500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 5CD6E0BE
-P 6300 9200
-F 0 "R?" H 6368 9246 50  0000 L CNN
-F 1 "100K" H 6368 9155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 9200 50  0001 C CNN
-F 3 "~" H 6300 9200 50  0001 C CNN
-	1    6300 9200
+P 6300 9100
+F 0 "R?" H 6368 9146 50  0000 L CNN
+F 1 "100K" H 6368 9055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 9100 50  0001 C CNN
+F 3 "~" H 6300 9100 50  0001 C CNN
+	1    6300 9100
 	1    0    0    -1  
 $EndComp
 Connection ~ 6700 8800
@@ -3623,13 +3593,13 @@ Wire Wire Line
 Wire Wire Line
 	7200 9400 6700 9400
 Wire Wire Line
-	6700 9400 6700 9300
+	6700 9400 6700 9200
 Wire Wire Line
-	6300 9300 6300 9400
+	6300 9200 6300 9400
 Wire Wire Line
-	6300 8300 6300 8200
+	6300 8400 6300 8200
 Wire Wire Line
-	6700 8200 6700 8300
+	6700 8200 6700 8400
 Wire Wire Line
 	6700 8200 7200 8200
 Wire Wire Line
@@ -3640,16 +3610,16 @@ TO-92 DSG
 Text Notes 6700 9600 0    50   ~ 0
 UPDATE FOOTPRINT
 Wire Wire Line
-	6300 8800 6300 9100
+	6300 8800 6300 9000
 Wire Wire Line
-	6700 8800 6700 9100
+	6700 8800 6700 9000
 Wire Wire Line
 	7200 9100 7200 9000
 Connection ~ 7200 9000
 Wire Wire Line
-	6300 8500 6300 8800
+	6300 8600 6300 8800
 Wire Wire Line
-	6700 8500 6700 8800
+	6700 8600 6700 8800
 Wire Wire Line
 	7200 8600 7200 8500
 $Comp
@@ -3664,21 +3634,10 @@ F 3 "" H 6300 9400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6300 9400
-Text Label 6800 3400 0    50   ~ 0
-FR1_1
-Text Label 6400 3400 0    50   ~ 0
-FR1_2
-$Comp
-L Amplifier_Operational:TL072 U?
-U 1 1 5D0312F2
-P 7500 4400
-F 0 "U?" H 7500 4767 50  0000 C CNN
-F 1 "TL052CP" H 7500 4676 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7500 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7500 4400 50  0001 C CNN
-	1    7500 4400
-	1    0    0    -1  
-$EndComp
+Text Label 6900 3000 0    50   ~ 0
+FR_1
+Text Label 6700 3000 2    50   ~ 0
+FR_2
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 5D04087E
@@ -3773,98 +3732,57 @@ Connection ~ 11300 8400
 $Comp
 L Amplifier_Operational:TL072 U4
 U 2 1 5CF9C237
-P 6400 4300
-F 0 "U4" H 6400 4100 50  0000 C CNN
-F 1 "TL052CP" H 6400 4000 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6400 4300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6400 4300 50  0001 C CNN
-	2    6400 4300
+P 6500 3900
+F 0 "U4" H 6500 3700 50  0000 C CNN
+F 1 "TL052CP" H 6500 3600 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6500 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6500 3900 50  0001 C CNN
+	2    6500 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5D08D8EF
-P 6400 3900
-F 0 "C?" V 6275 3900 50  0000 C CNN
-F 1 "10nF" V 6525 3900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 3900 50  0001 C CNN
-F 3 "~" H 6400 3900 50  0001 C CNN
-	1    6400 3900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	5800 3400 5600 3400
+	6000 3000 5700 3000
 Wire Wire Line
-	6100 4200 6000 4200
+	6200 3800 6100 3800
 Wire Wire Line
-	6900 4300 6700 4300
+	7000 3900 6800 3900
 $Comp
 L power:GND #PWR?
 U 1 1 5D0E814B
-P 6000 4500
-F 0 "#PWR?" H 6000 4250 50  0001 C CNN
-F 1 "GND" H 6000 4350 50  0000 C CNN
-F 2 "" H 6000 4500 50  0001 C CNN
-F 3 "" H 6000 4500 50  0001 C CNN
-	1    6000 4500
+P 6100 4100
+F 0 "#PWR?" H 6100 3850 50  0001 C CNN
+F 1 "GND" H 6100 3950 50  0000 C CNN
+F 2 "" H 6100 4100 50  0001 C CNN
+F 3 "" H 6100 4100 50  0001 C CNN
+	1    6100 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 4500 6000 4400
+	6100 4100 6100 4000
 Wire Wire Line
-	6000 4400 6100 4400
+	6100 4000 6200 4000
 Wire Wire Line
-	6600 3400 6000 3400
-$Comp
-L Device:R_Small_US R?
-U 1 1 5D106ABF
-P 7100 3100
-F 0 "R?" H 7168 3146 50  0000 L CNN
-F 1 "50" H 7168 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7100 3100 50  0001 C CNN
-F 3 "~" H 7100 3100 50  0001 C CNN
-	1    7100 3100
-	1    0    0    -1  
-$EndComp
+	6700 3000 6200 3000
 Wire Wire Line
-	6800 3400 7100 3400
+	6900 3000 7300 3000
 Wire Wire Line
-	7100 3400 7100 3200
-Wire Wire Line
-	7100 3000 7100 2800
-Wire Wire Line
-	7100 2800 6700 2800
-Wire Wire Line
-	7200 4500 7100 4500
-Wire Wire Line
-	7100 4500 7100 4800
-Wire Wire Line
-	7100 4800 7900 4800
-Wire Wire Line
-	7900 4800 7900 4400
-Wire Wire Line
-	7900 4400 7800 4400
-Wire Wire Line
-	7200 4300 7100 4300
-Connection ~ 6900 4300
-Text Label 8000 4400 0    50   ~ 0
+	7300 2400 6900 2400
+Connection ~ 7000 3900
+Text Label 7500 3900 0    50   ~ 0
 SIG_TRI
-Connection ~ 7900 4400
 Wire Wire Line
-	7900 4400 8300 4400
+	6400 3500 6100 3500
 Wire Wire Line
-	6300 3900 6000 3900
+	6100 3500 6100 3800
+Connection ~ 6100 3800
 Wire Wire Line
-	6000 3900 6000 4200
-Connection ~ 6000 4200
+	6100 3800 5700 3800
 Wire Wire Line
-	6000 4200 5600 4200
+	6600 3500 7000 3500
 Wire Wire Line
-	6500 3900 6900 3900
+	7000 3500 7000 3900
 Wire Wire Line
-	6900 3900 6900 4300
-Wire Wire Line
-	5600 3400 5600 4200
+	5700 3000 5700 3800
 $Comp
 L power:-12V #PWR?
 U 1 1 5D1B5D02
@@ -3913,103 +3831,51 @@ Wire Wire Line
 	1200 8800 1200 8700
 Text Notes 11000 5400 0    50   ~ 0
 NECESSARY?
-$Comp
-L Device:R_POT_US R?
-U 1 1 5D2698C7
-P 5600 2400
-F 0 "R?" H 5500 2450 50  0000 R CNN
-F 1 "10k TRIM" H 5500 2300 50  0000 R CNN
-F 2 "" H 5600 2400 50  0001 C CNN
-F 3 "~" H 5600 2400 50  0001 C CNN
-	1    5600 2400
-	1    0    0    -1  
-$EndComp
 Text Notes 12500 2600 0    50   ~ 10
 PROBABLY UNNECESSARY
 $Comp
 L Device:R_Small_US R?
 U 1 1 5D2C0683
-P 5400 2900
-F 0 "R?" V 5500 2900 50  0000 C CNN
-F 1 "18k" V 5300 2900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5400 2900 50  0001 C CNN
-F 3 "~" H 5400 2900 50  0001 C CNN
-	1    5400 2900
+P 5500 2500
+F 0 "R?" V 5600 2500 50  0000 C CNN
+F 1 "47K" V 5400 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5500 2500 50  0001 C CNN
+F 3 "~" H 5500 2500 50  0001 C CNN
+	1    5500 2500
 	0    -1   -1   0   
 $EndComp
 Text Notes 14600 2400 0    50   ~ 10
 REMOVE
-Text Notes 1200 3500 0    50   ~ 0
-Large range dial
-Text Notes 1200 4400 0    50   ~ 0
-Small range dial
-Text Label 5800 2700 0    50   ~ 0
-SYMM
-Wire Wire Line
-	5800 2700 6100 2700
-Text Notes 2800 3400 0    50   ~ 0
-CONSIDER USING\nA 1P6T SWITCH OR SO\nAND SWITCHING \nBETWEEN CAPS
+Text Notes 1200 2800 0    50   ~ 0
+Frequency Knob
 Wire Wire Line
 	7200 9000 8000 9000
-Text Notes 7000 5200 0    50   ~ 0
-BUFFER COULD BE REMOVED\nIF UNNECESSARY
-Wire Wire Line
-	5500 2900 5600 2900
-Wire Wire Line
-	5600 2550 5600 2900
-Connection ~ 5600 2900
-Wire Wire Line
-	5600 2900 6100 2900
-Wire Wire Line
-	5750 2400 5800 2400
-Wire Wire Line
-	5800 2400 5800 2200
-Wire Wire Line
-	5800 2200 5600 2200
-Wire Wire Line
-	5600 2200 5600 2250
 $Comp
 L Device:R_Small_US R?
 U 1 1 5D3D8ADB
-P 6000 2200
-F 0 "R?" V 6100 2200 50  0000 C CNN
-F 1 "30k" V 5900 2200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6000 2200 50  0001 C CNN
-F 3 "~" H 6000 2200 50  0001 C CNN
-	1    6000 2200
+P 6400 1800
+F 0 "R?" V 6500 1800 50  0000 C CNN
+F 1 "100K" V 6300 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 1800 50  0001 C CNN
+F 3 "~" H 6400 1800 50  0001 C CNN
+	1    6400 1800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5900 2200 5800 2200
-Connection ~ 5800 2200
-$Comp
-L power:+12V #PWR?
-U 1 1 5D3E94CF
-P 6200 2200
-F 0 "#PWR?" H 6200 2050 50  0001 C CNN
-F 1 "+12V" H 6215 2373 50  0000 C CNN
-F 2 "" H 6200 2200 50  0001 C CNN
-F 3 "" H 6200 2200 50  0001 C CNN
-	1    6200 2200
-	1    0    0    -1  
-$EndComp
+	5400 2500 5200 2500
 Wire Wire Line
-	6200 2200 6100 2200
+	5200 2500 5200 1400
 Wire Wire Line
-	5300 2900 4900 2900
+	5200 1400 7700 1400
 Wire Wire Line
-	4900 2900 4900 1700
+	7700 1400 7700 3300
 Wire Wire Line
-	4900 1700 7600 1700
+	7700 3300 7200 3300
 Wire Wire Line
-	7600 1700 7600 3700
+	7200 3300 7200 3900
+Connection ~ 7200 3900
 Wire Wire Line
-	7600 3700 7100 3700
-Wire Wire Line
-	7100 3700 7100 4300
-Connection ~ 7100 4300
-Wire Wire Line
-	7100 4300 6900 4300
+	7200 3900 7000 3900
 Wire Wire Line
 	900  9000 1300 9000
 Wire Wire Line
@@ -4056,4 +3922,124 @@ F 3 "~" H 7200 8400 50  0001 C CNN
 	1    7200 8400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7300 2400 7300 3000
+$Comp
+L Device:R_Small_US R?
+U 1 1 5CE5067E
+P 6100 3000
+F 0 "R?" V 6200 3000 50  0000 C CNN
+F 1 "10K" V 6000 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6100 3000 50  0001 C CNN
+F 3 "~" H 6100 3000 50  0001 C CNN
+	1    6100 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 3900 7800 3900
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5CE9B113
+P 3300 3200
+F 0 "J?" H 3400 2800 50  0000 L CNN
+F 1 "JST_PH_vert_01x06" H 3400 2700 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 3300 3200 50  0001 C CNN
+F 3 "~" H 3300 3200 50  0001 C CNN
+	1    3300 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 2700 2800 0    50   ~ 0
+Frequency Range Switch
+Text Label 2800 3000 0    50   ~ 0
+FC_1
+Text Label 2800 3100 0    50   ~ 0
+FC_2
+Text Label 2800 3200 0    50   ~ 0
+FC_COM
+Wire Wire Line
+	2800 3000 3100 3000
+Wire Wire Line
+	2800 3100 3100 3100
+Wire Wire Line
+	2800 3200 3100 3200
+Text Notes 2400 3900 0    50   ~ 0
+SP4T PANEL MOUNT ROTARY SWITCH
+Text Label 2800 3300 0    50   ~ 0
+FC_COM
+Wire Wire Line
+	2800 3300 3100 3300
+Text Label 2800 3400 0    50   ~ 0
+FC_3
+Wire Wire Line
+	2800 3400 3100 3400
+Text Label 2800 3500 0    50   ~ 0
+FC_4
+Wire Wire Line
+	2800 3500 3100 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5CF48AD7
+P 6000 2200
+F 0 "#PWR?" H 6000 1950 50  0001 C CNN
+F 1 "GND" H 6000 2050 50  0000 C CNN
+F 2 "" H 6000 2200 50  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2300 6100 2300
+Wire Wire Line
+	6100 2300 6100 2200
+Wire Wire Line
+	6100 2200 6000 2200
+Text Label 6600 3200 0    50   ~ 0
+FC_1
+Text Label 6600 3300 0    50   ~ 0
+FC_2
+Text Label 6600 3400 0    50   ~ 0
+FC_3
+Text Label 6600 3500 0    50   ~ 0
+FC_4
+Wire Wire Line
+	6600 3200 7000 3200
+Wire Wire Line
+	7000 3200 7000 3300
+Connection ~ 7000 3500
+Wire Wire Line
+	6600 3300 7000 3300
+Connection ~ 7000 3300
+Wire Wire Line
+	7000 3300 7000 3400
+Wire Wire Line
+	6600 3400 7000 3400
+Connection ~ 7000 3400
+Wire Wire Line
+	7000 3400 7000 3500
+Text Label 6100 3500 0    50   ~ 0
+FC_COM
+Wire Wire Line
+	5600 2500 5800 2500
+Wire Wire Line
+	6300 1800 5800 1800
+Wire Wire Line
+	5800 1800 5800 2500
+Connection ~ 5800 2500
+Wire Wire Line
+	5800 2500 6200 2500
+Wire Wire Line
+	6900 1800 6900 2400
+Wire Wire Line
+	6500 1800 6900 1800
+Connection ~ 6900 2400
+Wire Wire Line
+	6900 2400 6800 2400
+Text Notes 3400 3000 0    50   ~ 0
+10 nF
+Text Notes 3400 3100 0    50   ~ 0
+0.1 uF
+Text Notes 3400 3400 0    50   ~ 0
+1 uF
+Text Notes 3400 3500 0    50   ~ 0
+10 uF
 $EndSCHEMATC
