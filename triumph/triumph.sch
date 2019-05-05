@@ -629,7 +629,7 @@ Wire Wire Line
 	12900 6100 12900 5700
 Wire Wire Line
 	12900 5700 12800 5700
-Text Label 15700 4100 0    50   ~ 0
+Text Label 15800 4100 0    50   ~ 0
 SIG_OUT
 $Comp
 L power:GND #PWR028
@@ -970,8 +970,6 @@ Wire Wire Line
 	12100 1800 12400 1800
 Wire Wire Line
 	11300 4900 11300 4800
-Text Notes 14500 4900 0    50   ~ 0
-If want 1/4W out, need 1206\nand probably a beefier amp
 Text Label 6800 2800 0    50   ~ 0
 SIG_SQR
 Wire Wire Line
@@ -1357,10 +1355,8 @@ Text Notes 6100 1200 0    50   ~ 0
 DETERMINE VALUES
 Text Notes 6000 7600 0    100  ~ 20
 TRIANGLE - SINE SHAPER
-Text Label 8800 9100 0    50   ~ 0
+Text Label 7700 9000 0    50   ~ 0
 SIG_SIN
-Text Notes 5400 8900 0    50   ~ 0
-PRELIM VAL\nMAY NOT BE NEEDED
 $Bitmap
 Pos 15600 9575
 Scale 0.200000
@@ -3353,32 +3349,16 @@ $EndBitmap
 $Comp
 L Device:R_Small_US R?
 U 1 1 5CC5F4BC
-P 15500 4300
-F 0 "R?" H 15568 4346 50  0000 L CNN
-F 1 "50" H 15568 4255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15500 4300 50  0001 C CNN
-F 3 "~" H 15500 4300 50  0001 C CNN
-	1    15500 4300
-	1    0    0    -1  
+P 15600 4100
+F 0 "R?" V 15500 4050 50  0000 L CNN
+F 1 "50" V 15700 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15600 4100 50  0001 C CNN
+F 3 "~" H 15600 4100 50  0001 C CNN
+	1    15600 4100
+	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CC5F4C2
-P 15500 4400
-F 0 "#PWR?" H 15500 4150 50  0001 C CNN
-F 1 "GND" H 15500 4250 50  0000 C CNN
-F 2 "" H 15500 4400 50  0001 C CNN
-F 3 "" H 15500 4400 50  0001 C CNN
-	1    15500 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15500 4200 15500 4100
 Wire Wire Line
 	15300 4100 15500 4100
-Wire Wire Line
-	15500 4100 16000 4100
-Connection ~ 15500 4100
 $Comp
 L Device:C_Small C?
 U 1 1 5CCBF758
@@ -3597,54 +3577,17 @@ F 3 "~" V 6700 9200 50  0001 C CNN
 	1    6700 9200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 5CD179F4
-P 7200 8400
-F 0 "R?" H 7268 8446 50  0000 L CNN
-F 1 "100" H 7268 8355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 8400 50  0001 C CNN
-F 3 "~" H 7200 8400 50  0001 C CNN
-	1    7200 8400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 5CD184E5
-P 7200 9200
-F 0 "R?" H 7268 9246 50  0000 L CNN
-F 1 "100" H 7268 9155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 9200 50  0001 C CNN
-F 3 "~" H 7200 9200 50  0001 C CNN
-	1    7200 9200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 8200 6100 8200
 Text Label 5700 8200 0    50   ~ 0
 SIG_TRI
-Wire Wire Line
-	6400 8200 6300 8200
-$Comp
-L Device:R_Small_US R3
-U 1 1 5D2BFA84
-P 6200 8200
-F 0 "R3" V 6300 8200 50  0000 C CNN
-F 1 "100" V 6100 8200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6200 8200 50  0001 C CNN
-F 3 "~" H 6200 8200 50  0001 C CNN
-	1    6200 8200
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 5CD68F06
-P 6400 8400
-F 0 "R?" H 6468 8446 50  0000 L CNN
-F 1 "1M" H 6468 8355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 8400 50  0001 C CNN
-F 3 "~" H 6400 8400 50  0001 C CNN
-	1    6400 8400
+P 6300 8400
+F 0 "R?" H 6368 8446 50  0000 L CNN
+F 1 "100K" H 6368 8355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 8400 50  0001 C CNN
+F 3 "~" H 6300 8400 50  0001 C CNN
+	1    6300 8400
 	1    0    0    -1  
 $EndComp
 Text Notes 6400 9900 0    50   ~ 0
@@ -3663,20 +3606,18 @@ $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 5CD6E0BE
-P 6400 9200
-F 0 "R?" H 6468 9246 50  0000 L CNN
-F 1 "1M" H 6468 9155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 9200 50  0001 C CNN
-F 3 "~" H 6400 9200 50  0001 C CNN
-	1    6400 9200
+P 6300 9200
+F 0 "R?" H 6368 9246 50  0000 L CNN
+F 1 "100K" H 6368 9155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 9200 50  0001 C CNN
+F 3 "~" H 6300 9200 50  0001 C CNN
+	1    6300 9200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 8800 6700 8800
 Connection ~ 6700 8800
 Wire Wire Line
 	6700 8800 6900 8800
-Connection ~ 6400 8800
+Connection ~ 6300 8800
 Wire Wire Line
 	7200 9300 7200 9400
 Wire Wire Line
@@ -3684,35 +3625,29 @@ Wire Wire Line
 Wire Wire Line
 	6700 9400 6700 9300
 Wire Wire Line
-	6400 9300 6400 9400
+	6300 9300 6300 9400
 Wire Wire Line
-	6400 9400 6700 9400
-Connection ~ 6700 9400
-Wire Wire Line
-	6400 8300 6400 8200
-Wire Wire Line
-	6400 8200 6700 8200
+	6300 8300 6300 8200
 Wire Wire Line
 	6700 8200 6700 8300
 Wire Wire Line
 	6700 8200 7200 8200
 Wire Wire Line
 	7200 8200 7200 8300
-Connection ~ 6700 8200
-Connection ~ 6400 8200
+Connection ~ 6300 8200
 Text Notes 7500 8700 0    50   ~ 0
 TO-92 DSG
 Text Notes 6700 9600 0    50   ~ 0
 UPDATE FOOTPRINT
 Wire Wire Line
-	6400 8800 6400 9100
+	6300 8800 6300 9100
 Wire Wire Line
 	6700 8800 6700 9100
 Wire Wire Line
 	7200 9100 7200 9000
 Connection ~ 7200 9000
 Wire Wire Line
-	6400 8500 6400 8800
+	6300 8500 6300 8800
 Wire Wire Line
 	6700 8500 6700 8800
 Wire Wire Line
@@ -3720,15 +3655,15 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5CF4854B
-P 6400 9400
-F 0 "#PWR?" H 6400 9150 50  0001 C CNN
-F 1 "GND" H 6400 9250 50  0000 C CNN
-F 2 "" H 6400 9400 50  0001 C CNN
-F 3 "" H 6400 9400 50  0001 C CNN
-	1    6400 9400
+P 6300 9400
+F 0 "#PWR?" H 6300 9150 50  0001 C CNN
+F 1 "GND" H 6300 9250 50  0000 C CNN
+F 2 "" H 6300 9400 50  0001 C CNN
+F 3 "" H 6300 9400 50  0001 C CNN
+	1    6300 9400
 	1    0    0    -1  
 $EndComp
-Connection ~ 6400 9400
+Connection ~ 6300 9400
 Text Label 6800 3400 0    50   ~ 0
 FR1_1
 Text Label 6400 3400 0    50   ~ 0
@@ -3742,17 +3677,6 @@ F 1 "TL052CP" H 7500 4676 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7500 4400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7500 4400 50  0001 C CNN
 	1    7500 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
-U 2 1 5D0320BF
-P 8300 9100
-F 0 "U?" H 8300 9467 50  0000 C CNN
-F 1 "TL052CP" H 8300 9376 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 8300 9100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8300 9100 50  0001 C CNN
-	2    8300 9100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -4026,22 +3950,7 @@ Wire Wire Line
 Text Notes 2800 3400 0    50   ~ 0
 CONSIDER USING\nA 1P6T SWITCH OR SO\nAND SWITCHING \nBETWEEN CAPS
 Wire Wire Line
-	9100 9100 8700 9100
-Wire Wire Line
-	8700 9100 8700 9500
-Wire Wire Line
-	8700 9500 7900 9500
-Wire Wire Line
-	7900 9500 7900 9200
-Wire Wire Line
-	7900 9200 8000 9200
-Connection ~ 8700 9100
-Wire Wire Line
-	8700 9100 8600 9100
-Wire Wire Line
 	7200 9000 8000 9000
-Text Notes 7800 9800 0    50   ~ 0
-BUFFER COULD BE REMOVED\nIF UNNECESSARY
 Text Notes 7000 5200 0    50   ~ 0
 BUFFER COULD BE REMOVED\nIF UNNECESSARY
 Wire Wire Line
@@ -4113,4 +4022,38 @@ Wire Wire Line
 	900  6500 1300 6500
 Wire Wire Line
 	900  6200 900  6500
+Wire Wire Line
+	16100 4100 15700 4100
+Wire Wire Line
+	5700 8200 6300 8200
+Wire Wire Line
+	6300 8200 6700 8200
+Connection ~ 6700 8200
+Wire Wire Line
+	6300 8800 6700 8800
+Wire Wire Line
+	6300 9400 6700 9400
+Connection ~ 6700 9400
+$Comp
+L Device:R_Small_US R?
+U 1 1 5CDFEB63
+P 7200 9200
+F 0 "R?" H 7268 9246 50  0000 L CNN
+F 1 "47" H 7268 9155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 9200 50  0001 C CNN
+F 3 "~" H 7200 9200 50  0001 C CNN
+	1    7200 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5CDFEF98
+P 7200 8400
+F 0 "R?" H 7268 8446 50  0000 L CNN
+F 1 "47" H 7268 8355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 8400 50  0001 C CNN
+F 3 "~" H 7200 8400 50  0001 C CNN
+	1    7200 8400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
