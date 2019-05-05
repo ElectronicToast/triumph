@@ -14,22 +14,11 @@ Comment2 "EE 90"
 Comment3 "Ray Sun"
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5CADBEA4
-P 1500 1500
-F 0 "J2" H 1580 1542 50  0000 L CNN
-F 1 "ScrewTerm_5mm_01x03" H 1580 1451 50  0000 L CNN
-F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 1500 1500 50  0001 C CNN
-F 3 "~" H 1500 1500 50  0001 C CNN
-	1    1500 1500
-	1    0    0    -1  
-$EndComp
 Text Notes 14900 800  0    100  ~ 20
 INDICATORS
 Wire Notes Line
 	14100 500  14100 2700
-Text Notes 1200 1000 0    50   ~ 10
+Text Notes 1300 1000 0    50   ~ 10
 DC Input
 Wire Notes Line
 	4400 10510 4400 490 
@@ -149,8 +138,8 @@ Text Notes 1100 7200 0    50   ~ 10
 Amplitude Dial
 Text Notes 1600 9100 0    50   ~ 0
 10k POT
-Text Notes 15000 2400 0    50   ~ 0
-JST XH 01x02
+Text Notes 14900 2400 0    50   ~ 0
+JST XH VERT 01x02
 Text Notes 10300 9700 0    50   ~ 10
 FOOTPRINTS\n\nALL SMD PASSIVES\nALL SMD LEDs \nALL SINGLE/DUAL OPAMPS
 Text Notes 11500 9700 0    50   ~ 0
@@ -438,17 +427,13 @@ Wire Wire Line
 Wire Wire Line
 	1200 8800 1300 8800
 Wire Wire Line
-	900  1300 900  1400
+	1200 1300 1200 1400
 Wire Wire Line
-	900  1400 1300 1400
+	1200 1400 1300 1400
 Wire Wire Line
-	1200 1300 1200 1600
+	1300 1500 1200 1500
 Wire Wire Line
-	1200 1600 1300 1600
-Wire Wire Line
-	1300 1500 1100 1500
-Wire Wire Line
-	1100 1500 1100 1700
+	1200 1500 1200 1600
 $Comp
 L power:-12V #PWR038
 U 1 1 5CC4FAD7
@@ -3230,24 +3215,13 @@ Wire Wire Line
 	11200 1800 10800 1800
 $Comp
 L power:VCC #PWR?
-U 1 1 5CD4E45A
+U 1 1 5CD4FFA5
 P 1200 1300
 F 0 "#PWR?" H 1200 1150 50  0001 C CNN
 F 1 "VCC" H 1250 1500 50  0000 C CNN
 F 2 "" H 1200 1300 50  0001 C CNN
 F 3 "" H 1200 1300 50  0001 C CNN
 	1    1200 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5CD4FFA5
-P 900 1300
-F 0 "#PWR?" H 900 1150 50  0001 C CNN
-F 1 "VCC" H 950 1500 50  0000 C CNN
-F 2 "" H 900 1300 50  0001 C CNN
-F 3 "" H 900 1300 50  0001 C CNN
-	1    900  1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3282,12 +3256,12 @@ $EndComp
 $Comp
 L power:GNDREF #PWR?
 U 1 1 5CE6D77F
-P 1100 1700
-F 0 "#PWR?" H 1100 1450 50  0001 C CNN
-F 1 "GNDREF" H 1150 1500 50  0000 C CNN
-F 2 "" H 1100 1700 50  0001 C CNN
-F 3 "" H 1100 1700 50  0001 C CNN
-	1    1100 1700
+P 1200 1600
+F 0 "#PWR?" H 1200 1350 50  0001 C CNN
+F 1 "GNDREF" H 1250 1400 50  0000 C CNN
+F 2 "" H 1200 1600 50  0001 C CNN
+F 3 "" H 1200 1600 50  0001 C CNN
+	1    1200 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3469,7 +3443,7 @@ F 3 "" H 6000 9400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6000 9400
-Text Label 6900 3000 0    50   ~ 0
+Text Label 6800 3000 0    50   ~ 0
 FR_1
 Text Label 6700 3000 2    50   ~ 0
 FR_2
@@ -3575,7 +3549,7 @@ Wire Wire Line
 Wire Wire Line
 	6700 3000 6200 3000
 Wire Wire Line
-	6900 3000 7300 3000
+	6800 3000 7300 3000
 Wire Wire Line
 	7300 2400 6900 2400
 Connection ~ 7000 3900
@@ -3969,4 +3943,15 @@ Text Notes 6100 5300 0    50   ~ 0
 Comparator for DC control
 Text Notes 9700 2600 0    50   ~ 0
 LOOK AT RS-1212D
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D1DC25B
+P 1500 1400
+F 0 "J?" H 1600 1400 50  0000 L CNN
+F 1 "JST_XH_vert_01x02" H 1600 1300 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 1500 1400 50  0001 C CNN
+F 3 "~" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
