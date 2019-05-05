@@ -158,12 +158,12 @@ FOOTPRINTS\n\nALL SMD PASSIVES\nALL SMD LEDs \nALL SINGLE/DUAL OPAMPS
 Text Notes 11500 9700 0    50   ~ 0
 0805\n1206\nDIP8 Socket
 $Comp
-L Regulator_Linear:L79L05_SOT89 U2
+L Regulator_Linear:L79L05_SOT89 U3
 U 1 1 5CBE8B62
 P 13000 2200
-F 0 "U2" H 13000 2051 50  0000 C CNN
-F 1 "L79L05_SOT89" H 13000 1960 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3_Handsoldering" H 13000 2000 50  0001 C CIN
+F 0 "U3" H 13000 2051 50  0000 C CNN
+F 1 "7905" H 13000 1960 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 13000 2000 50  0001 C CIN
 F 3 "http://www.farnell.com/datasheets/1827870.pdf" H 13000 2200 50  0001 C CNN
 	1    13000 2200
 	1    0    0    -1  
@@ -728,31 +728,6 @@ Text Notes 12900 4000 0    50   ~ 0
 Gain adjustable from \n0.25 to 12
 Text Notes 12000 5200 0    50   ~ 0
 Unity gain summing amp
-$Comp
-L Device:R_Small_US R11
-U 1 1 5CBD1514
-P 11300 5000
-F 0 "R11" H 11368 5046 50  0000 L CNN
-F 1 "10K" H 11368 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11300 5000 50  0001 C CNN
-F 3 "~" H 11300 5000 50  0001 C CNN
-	1    11300 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR021
-U 1 1 5CBD1E75
-P 11300 5100
-F 0 "#PWR021" H 11300 4850 50  0001 C CNN
-F 1 "GND" H 11300 4950 50  0000 C CNN
-F 2 "" H 11300 5100 50  0001 C CNN
-F 3 "" H 11300 5100 50  0001 C CNN
-	1    11300 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11300 4800 11600 4800
-Connection ~ 11600 4800
 Text Notes 9800 6200 0    50   ~ 0
 SIG_PREOUT
 Text Notes 9400 5900 2    50   ~ 0
@@ -831,20 +806,18 @@ Wire Wire Line
 Text Notes 1500 6100 0    50   ~ 0
 DETERMINE VALUES
 $Comp
-L Regulator_Linear:L78L05_SOT89 U1
+L Regulator_Linear:L78L05_SOT89 U2
 U 1 1 5CC77412
 P 13000 1400
-F 0 "U1" H 13000 1642 50  0000 C CNN
-F 1 "L78L05_SOT89" H 13000 1551 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3_Handsoldering" H 13000 1600 50  0001 C CIN
+F 0 "U2" H 13000 1642 50  0000 C CNN
+F 1 "7805" H 13000 1551 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 13000 1600 50  0001 C CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 13000 1350 50  0001 C CNN
 	1    13000 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	12100 1800 12400 1800
-Wire Wire Line
-	11300 4900 11300 4800
 Wire Wire Line
 	14600 4200 14500 4200
 Wire Wire Line
@@ -900,7 +873,7 @@ L Amplifier_Operational:TL072 U5
 U 1 1 5CD25ED9
 P 12500 4100
 F 0 "U5" H 12500 4467 50  0000 C CNN
-F 1 "TL052CP" H 12500 4376 50  0000 C CNN
+F 1 "NE5532AP" H 12500 4376 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 12500 4100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12500 4100 50  0001 C CNN
 	1    12500 4100
@@ -911,29 +884,29 @@ L Amplifier_Operational:TL072 U5
 U 2 1 5CD27CE0
 P 12500 5700
 F 0 "U5" H 12500 6067 50  0000 C CNN
-F 1 "TL052CP" H 12500 5976 50  0000 C CNN
+F 1 "NE5532AP" H 12500 5976 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 12500 5700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12500 5700 50  0001 C CNN
 	2    12500 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U5
+L Amplifier_Operational:TL072 U6
 U 3 1 5CD29132
 P 13600 8000
-F 0 "U5" H 13558 8046 50  0000 L CNN
-F 1 "TL052CP" H 13558 7955 50  0000 L CNN
+F 0 "U6" H 13558 8046 50  0000 L CNN
+F 1 "NE5532AP" H 13558 7955 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 13600 8000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 13600 8000 50  0001 C CNN
 	3    13600 8000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U6
+L Amplifier_Operational:TL072 U7
 U 3 1 5CD30896
 P 15200 8000
-F 0 "U6" H 15158 8046 50  0000 L CNN
-F 1 "TL052CP" H 15158 7955 50  0000 L CNN
+F 0 "U7" H 15158 8046 50  0000 L CNN
+F 1 "NE5532AP" H 15158 7955 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 15200 8000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 15200 8000 50  0001 C CNN
 	3    15200 8000
@@ -1024,7 +997,7 @@ L Amplifier_Operational:TL072 U6
 U 1 1 5CD5A1E3
 P 14900 4100
 F 0 "U6" H 14900 4467 50  0000 C CNN
-F 1 "TL052CP" H 14900 4376 50  0000 C CNN
+F 1 "NE5532AP" H 14900 4376 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 14900 4100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 14900 4100 50  0001 C CNN
 	1    14900 4100
@@ -1035,7 +1008,7 @@ L Amplifier_Operational:TL072 U6
 U 2 1 5CD5B860
 P 14900 5700
 F 0 "U6" H 14900 6067 50  0000 C CNN
-F 1 "TL052CP" H 14900 5976 50  0000 C CNN
+F 1 "NE5532AP" H 14900 5976 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 14900 5700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 14900 5700 50  0001 C CNN
 	2    14900 5700
@@ -1093,18 +1066,18 @@ L Amplifier_Operational:TL072 U4
 U 1 1 5CF9B072
 P 6500 2400
 F 0 "U4" H 6500 2767 50  0000 C CNN
-F 1 "TL052CP" H 6500 2676 50  0000 C CNN
+F 1 "NE5532AP" H 6500 2676 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6500 2400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6500 2400 50  0001 C CNN
 	1    6500 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U4
+L Amplifier_Operational:TL072 U5
 U 3 1 5CF9DAAC
 P 12500 8000
-F 0 "U4" H 12458 8046 50  0000 L CNN
-F 1 "TL052CP" H 12458 7955 50  0000 L CNN
+F 0 "U5" H 12458 8046 50  0000 L CNN
+F 1 "NE5532AP" H 12458 7955 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 12500 8000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12500 8000 50  0001 C CNN
 	3    12500 8000
@@ -3280,10 +3253,10 @@ F 3 "" H 900 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:NMA1212DC U?
+L Regulator_Switching:NMA1212DC U1
 U 1 1 5CD50DAA
 P 10100 1800
-F 0 "U?" H 10100 2300 50  0000 C CNN
+F 0 "U1" H 10100 2300 50  0000 C CNN
 F 1 "NMA1212DC" H 10100 2200 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_muRata_NMAxxxxDC_THT" H 10100 1450 50  0001 C CIN
 F 3 "http://power.murata.com/data/power/ncl/kdc_nma.pdf" H 10100 1800 50  0001 C CNN
@@ -3505,11 +3478,11 @@ FR_1
 Text Label 6700 3000 2    50   ~ 0
 FR_2
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U4
 U 3 1 5D04087E
 P 11400 8000
-F 0 "U?" H 11358 8046 50  0000 L CNN
-F 1 "TL052CP" H 11358 7955 50  0000 L CNN
+F 0 "U4" H 11358 8046 50  0000 L CNN
+F 1 "NE5532AP" H 11358 7955 50  0000 L CNN
 F 2 "" H 11400 8000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 11400 8000 50  0001 C CNN
 	3    11400 8000
@@ -3576,7 +3549,7 @@ L Amplifier_Operational:TL072 U4
 U 2 1 5CF9C237
 P 6500 3900
 F 0 "U4" H 6500 3700 50  0000 C CNN
-F 1 "TL052CP" H 6500 3600 50  0000 C CNN
+F 1 "NE5532AP" H 6500 3600 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6500 3900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6500 3900 50  0001 C CNN
 	2    6500 3900
@@ -3669,8 +3642,6 @@ F 3 "~" H 900 8600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 8800 1200 8700
-Text Notes 11000 5400 0    50   ~ 0
-NECESSARY?
 Text Notes 12500 2600 0    50   ~ 10
 PROBABLY UNNECESSARY
 $Comp
@@ -3954,7 +3925,7 @@ L Comparator:LM311 U?
 U 1 1 5D09C176
 P 6800 5700
 F 0 "U?" H 6950 6150 50  0000 L CNN
-F 1 "LM211" H 6950 5300 50  0000 L CNN
+F 1 "LM211P" H 6950 5300 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6800 5700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm311.pdf" H 6800 5700 50  0001 C CNN
 	1    6800 5700
