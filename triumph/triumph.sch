@@ -710,37 +710,29 @@ F 3 "~" H 3300 4800 50  0001 C CNN
 $EndComp
 Text Notes 2700 4400 0    50   ~ 10
 Output Select Dial
-Text Label 2600 5100 0    50   ~ 0
+Text Label 2600 4800 0    50   ~ 0
 SIG_PREOUT
 Text Label 2800 4600 0    50   ~ 0
 SIG_SIN
 Text Label 2800 4700 0    50   ~ 0
 SIG_SQR
-Text Label 2800 4800 0    50   ~ 0
+Text Label 2800 5000 0    50   ~ 0
 SIG_TRI
 Wire Wire Line
 	2800 4600 3100 4600
 Wire Wire Line
 	2800 4700 3100 4700
-Wire Wire Line
-	2800 4800 3100 4800
-Wire Wire Line
-	2600 5100 3100 5100
 $Comp
 L power:GND #PWR08
 U 1 1 5CCFB5D0
-P 2500 4800
-F 0 "#PWR08" H 2500 4550 50  0001 C CNN
-F 1 "GND" H 2505 4627 50  0000 C CNN
-F 2 "" H 2500 4800 50  0001 C CNN
-F 3 "" H 2500 4800 50  0001 C CNN
-	1    2500 4800
+P 2800 5100
+F 0 "#PWR08" H 2800 4850 50  0001 C CNN
+F 1 "GND" H 2805 4927 50  0000 C CNN
+F 2 "" H 2800 5100 50  0001 C CNN
+F 3 "" H 2800 5100 50  0001 C CNN
+	1    2800 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 4800 2700 4800
-Wire Wire Line
-	2700 4900 3100 4900
 Text Notes 12000 6500 0    50   ~ 0
 IF WANT R2R
 Text Notes 12000 6800 0    50   ~ 0
@@ -1066,8 +1058,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 14900 5700 50  0001 C CNN
 	2    14900 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 4800 2700 4900
 Text Notes 9000 5100 0    100  ~ 20
 OUTPUT SELECT
 Text Notes 2600 1900 0    50   ~ 0
@@ -2767,11 +2757,6 @@ EndData
 $EndBitmap
 Text Notes 5800 1000 0    50   ~ 0
 Integrator with Schmitt feedback
-Wire Wire Line
-	3100 5000 2700 5000
-Wire Wire Line
-	2700 5000 2700 4900
-Connection ~ 2700 4900
 Text Notes 14700 6000 0    50   ~ 0
 Not used
 Text Notes 14400 6500 0    50   ~ 0
@@ -3938,4 +3923,15 @@ Text Notes 3400 3400 0    50   ~ 0
 1 uF
 Text Notes 3400 3500 0    50   ~ 0
 10 uF
+Wire Wire Line
+	2800 5100 3100 5100
+Wire Wire Line
+	2800 5000 3100 5000
+Text Label 2800 5100 0    50   ~ 0
+SIG_DC
+Wire Wire Line
+	2600 4800 3100 4800
+Wire Wire Line
+	3100 4900 3100 4800
+Connection ~ 3100 4800
 $EndSCHEMATC
