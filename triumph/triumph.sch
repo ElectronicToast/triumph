@@ -596,32 +596,17 @@ Wire Wire Line
 	12100 4000 12200 4000
 Wire Wire Line
 	11900 4200 12100 4200
-$Comp
-L Device:R_Small_US R15
-U 1 1 5CC88296
-P 12300 4500
-F 0 "R15" V 12400 4500 50  0000 C CNN
-F 1 "2K" V 12200 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12300 4500 50  0001 C CNN
-F 3 "~" H 12300 4500 50  0001 C CNN
-	1    12300 4500
-	0    -1   -1   0   
-$EndComp
-Text Label 12500 4500 0    50   ~ 0
+Text Label 12300 4500 0    50   ~ 0
 APL_1
-Text Label 12800 4500 0    50   ~ 0
+Text Label 12600 4500 0    50   ~ 0
 APL_2
-Wire Wire Line
-	12200 4500 12100 4500
 Wire Wire Line
 	12100 4500 12100 4200
 Connection ~ 12100 4200
 Wire Wire Line
 	12100 4200 12200 4200
 Wire Wire Line
-	12400 4500 12700 4500
-Wire Wire Line
-	12800 4500 13100 4500
+	12600 4500 13100 4500
 Wire Wire Line
 	13100 4500 13100 4100
 Wire Wire Line
@@ -3628,8 +3613,6 @@ Connection ~ 7000 3900
 Text Label 7500 3900 0    50   ~ 0
 SIG_TRI
 Wire Wire Line
-	6400 3500 6100 3500
-Wire Wire Line
 	6100 3500 6100 3800
 Connection ~ 6100 3800
 Wire Wire Line
@@ -3871,7 +3854,7 @@ Wire Wire Line
 Connection ~ 7000 3400
 Wire Wire Line
 	7000 3400 7000 3500
-Text Label 6100 3500 0    50   ~ 0
+Text Label 6200 3500 0    50   ~ 0
 FC_COM
 Wire Wire Line
 	5600 2500 5800 2500
@@ -4009,4 +3992,8 @@ Wire Wire Line
 Wire Wire Line
 	7700 5700 7200 5700
 Connection ~ 7200 5700
+Wire Wire Line
+	12100 4500 12500 4500
+Wire Wire Line
+	6100 3500 6500 3500
 $EndSCHEMATC
