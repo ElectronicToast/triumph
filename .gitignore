@@ -28,3 +28,4 @@ _autosave-*
 # Library tables
 sym-lib-table
 fp-lib-table
+fp-info-cache
