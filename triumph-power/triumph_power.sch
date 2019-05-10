@@ -6,7 +6,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Power Board"
-Date "2019-05-09"
+Date "2019-05-10"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -41,10 +41,10 @@ F 3 "" H 6000 4700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:CP_Small C3
+L Device:CP_Small C4
 U 1 1 5CBEA19B
 P 6000 4000
-F 0 "C3" H 6088 4046 50  0000 L CNN
+F 0 "C4" H 6088 4046 50  0000 L CNN
 F 1 "10uF" H 6088 3955 50  0000 L CNN
 F 2 "" H 6000 4000 50  0001 C CNN
 F 3 "~" H 6000 4000 50  0001 C CNN
@@ -52,10 +52,10 @@ F 3 "~" H 6000 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C4
+L Device:CP_Small C5
 U 1 1 5CBEAEC8
 P 6000 4400
-F 0 "C4" H 6088 4446 50  0000 L CNN
+F 0 "C5" H 6088 4446 50  0000 L CNN
 F 1 "10uF" H 6088 4355 50  0000 L CNN
 F 2 "" H 6000 4400 50  0001 C CNN
 F 3 "~" H 6000 4400 50  0001 C CNN
@@ -2056,10 +2056,10 @@ C0 00 00 00 24 08 60 00 00 00 12 04 30 00 00 00 09 02 18 00 00 80 04 01 0C 00 00
 EndData
 $EndBitmap
 $Comp
-L Device:C_Small C5
+L Device:C_Small C6
 U 1 1 5CCBF758
 P 6400 4000
-F 0 "C5" H 6492 4046 50  0000 L CNN
+F 0 "C6" H 6492 4046 50  0000 L CNN
 F 1 "0.1uF" H 6492 3955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 4000 50  0001 C CNN
 F 3 "~" H 6400 4000 50  0001 C CNN
@@ -2067,10 +2067,10 @@ F 3 "~" H 6400 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C6
+L Device:C_Small C7
 U 1 1 5CCBFA7B
 P 6400 4400
-F 0 "C6" H 6492 4446 50  0000 L CNN
+F 0 "C7" H 6492 4446 50  0000 L CNN
 F 1 "0.1uF" H 6492 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 4400 50  0001 C CNN
 F 3 "~" H 6400 4400 50  0001 C CNN
@@ -2078,10 +2078,10 @@ F 3 "~" H 6400 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C7
+L Device:C_Small C8
 U 1 1 5CCFA363
 P 6800 4000
-F 0 "C7" H 6892 4046 50  0000 L CNN
+F 0 "C8" H 6892 4046 50  0000 L CNN
 F 1 "0.01uF" H 6892 3955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6800 4000 50  0001 C CNN
 F 3 "~" H 6800 4000 50  0001 C CNN
@@ -2089,10 +2089,10 @@ F 3 "~" H 6800 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L Device:C_Small C9
 U 1 1 5CCFA687
 P 6800 4400
-F 0 "C8" H 6892 4446 50  0000 L CNN
+F 0 "C9" H 6892 4446 50  0000 L CNN
 F 1 "0.01uF" H 6892 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6800 4400 50  0001 C CNN
 F 3 "~" H 6800 4400 50  0001 C CNN
@@ -2296,10 +2296,10 @@ Wire Wire Line
 Wire Wire Line
 	5800 4600 6000 4600
 $Comp
-L Device:CP_Small C2
+L Device:CP_Small C3
 U 1 1 5CD91B30
 P 4400 4200
-F 0 "C2" H 4488 4246 50  0000 L CNN
+F 0 "C3" H 4488 4246 50  0000 L CNN
 F 1 "47uF" H 4488 4155 50  0000 L CNN
 F 2 "" H 4400 4200 50  0001 C CNN
 F 3 "~" H 4400 4200 50  0001 C CNN
@@ -2326,11 +2326,11 @@ Wire Wire Line
 Wire Wire Line
 	4800 4100 4800 4000
 $Comp
-L Device:C_Small C1
+L Device:C_Small C2
 U 1 1 5CD99A76
 P 4000 4200
-F 0 "C1" H 4092 4246 50  0000 L CNN
-F 1 "1uF" H 4092 4155 50  0000 L CNN
+F 0 "C2" H 4092 4246 50  0000 L CNN
+F 1 "0.1uF" H 4092 4155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 4200 50  0001 C CNN
 F 3 "~" H 4000 4200 50  0001 C CNN
 	1    4000 4200
@@ -2366,4 +2366,27 @@ Wire Wire Line
 Wire Wire Line
 	4800 3600 4800 4000
 Connection ~ 4800 4000
+Text Notes 4700 5300 0    50   ~ 0
+REPLACE WITH CORRECT FOOTPRINT\nONCE POWER BUDGET DETERMINED
+$Comp
+L Device:C_Small C1
+U 1 1 5CE965D2
+P 3600 4200
+F 0 "C1" H 3692 4246 50  0000 L CNN
+F 1 "1uF" H 3692 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 4200 50  0001 C CNN
+F 3 "~" H 3600 4200 50  0001 C CNN
+	1    3600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4300 3600 4400
+Wire Wire Line
+	3600 4400 4000 4400
+Connection ~ 4000 4400
+Wire Wire Line
+	3600 4100 3600 4000
+Wire Wire Line
+	3600 4000 4000 4000
+Connection ~ 4000 4000
 $EndSCHEMATC
