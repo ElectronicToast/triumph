@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:triumph_main-cache
 EELAYER 29 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Main Board"
-Date "2019-05-11"
+Date "2019-05-12"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -373,17 +372,6 @@ Wire Wire Line
 Wire Wire Line
 	12100 5600 12200 5600
 $Comp
-L Device:R_Small_US R17
-U 1 1 5CC83090
-P 11800 4200
-F 0 "R17" V 11900 4200 50  0000 C CNN
-F 1 "8.2K" V 11700 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11800 4200 50  0001 C CNN
-F 3 "~" H 11800 4200 50  0001 C CNN
-	1    11800 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR025
 U 1 1 5CC83D1D
 P 11900 3800
@@ -400,8 +388,6 @@ Wire Wire Line
 	12100 3800 12100 4000
 Wire Wire Line
 	12100 4000 12200 4000
-Wire Wire Line
-	11900 4200 12100 4200
 Text Label 12300 4500 0    50   ~ 0
 APL_1
 Text Label 12600 4500 0    50   ~ 0
@@ -430,10 +416,8 @@ Wire Wire Line
 Connection ~ 13100 4100
 Text Notes 12000 3400 0    50   ~ 10
 Output Amplitude Control
-Text Label 11100 4200 0    50   ~ 0
+Text Label 10900 4200 0    50   ~ 0
 SIG_PREOUT
-Wire Wire Line
-	11100 4200 11700 4200
 $Comp
 L Device:CP_Small C16
 U 1 1 5CCA3234
@@ -3728,7 +3712,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 6100 5900 6100
 Connection ~ 5900 6100
-Text Notes 1000 8800 0    50   ~ 0
+Text Notes 1000 8900 0    50   ~ 0
 (24)^2 / R SHOULD NOT\nEXCEED POWER RATING
 Wire Wire Line
 	6700 6000 6700 6100
@@ -4197,4 +4181,32 @@ Text Notes 10300 10100 0    50   ~ 0
 NE5532P PRELIMINARY\nREPLACE WITH AD826
 Connection ~ 12100 1200
 Connection ~ 15400 7500
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5CDEC7D8
+P 11600 4200
+F 0 "RV?" V 11400 4300 50  0000 R CNN
+F 1 "10K" V 11500 4300 50  0000 R CNN
+F 2 "" H 11600 4200 50  0001 C CNN
+F 3 "~" H 11600 4200 50  0001 C CNN
+	1    11600 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11750 4200 11800 4200
+Wire Wire Line
+	11800 4200 11800 4400
+Wire Wire Line
+	11800 4400 11600 4400
+Wire Wire Line
+	11600 4400 11600 4350
+Connection ~ 11800 4200
+Wire Wire Line
+	11800 4200 12100 4200
+Wire Wire Line
+	11450 4200 10900 4200
+Text Notes 11300 4600 0    50   ~ 0
+NOM VALUE: 8.2K
+Text Notes 1200 8600 0    50   ~ 0
+USE LOWEST VALUE POSSIBLE
 $EndSCHEMATC
