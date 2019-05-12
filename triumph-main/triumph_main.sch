@@ -6,7 +6,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Main Board"
-Date "2019-05-10"
+Date "2019-05-11"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"

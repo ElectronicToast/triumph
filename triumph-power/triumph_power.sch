@@ -6,7 +6,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Power Board"
-Date "2019-05-10"
+Date "2019-05-11"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -2389,4 +2389,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 4000 4000 4000
 Connection ~ 4000 4000
+Text Notes 1800 1500 0    50   ~ 0
+9-18V IN
 $EndSCHEMATC
