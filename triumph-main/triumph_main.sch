@@ -3319,7 +3319,7 @@ U 1 1 5D09C176
 P 6300 6800
 F 0 "U1" H 6450 7200 50  0000 L CNN
 F 1 "LM211P" H 6400 6500 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6300 6800 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6300 6800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm311.pdf" H 6300 6800 50  0001 C CNN
 	1    6300 6800
 	1    0    0    -1  
