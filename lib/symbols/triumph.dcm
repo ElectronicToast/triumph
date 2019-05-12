@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RS-1212D
+D Dual +/-12V Regulated Converter
+K DC/DC converter dual
+F https://static6.arrow.com/aropdfconversion/9cd62f2a5f51d6d3b62395271ac638f1c729449b/2589778590995298rs-s_d_z.pdf
+$ENDCMP
+#
+#End Doc Library
