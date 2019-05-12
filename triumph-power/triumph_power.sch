@@ -40,23 +40,23 @@ F 3 "" H 6000 4700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:CP_Small C4
+L Device:CP_Small C3
 U 1 1 5CBEA19B
 P 6000 4000
-F 0 "C4" H 6088 4046 50  0000 L CNN
+F 0 "C3" H 6088 4046 50  0000 L CNN
 F 1 "10uF" H 6088 3955 50  0000 L CNN
-F 2 "" H 6000 4000 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" H 6000 4000 50  0001 C CNN
 F 3 "~" H 6000 4000 50  0001 C CNN
 	1    6000 4000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C5
+L Device:CP_Small C4
 U 1 1 5CBEAEC8
 P 6000 4400
-F 0 "C5" H 6088 4446 50  0000 L CNN
+F 0 "C4" H 6088 4446 50  0000 L CNN
 F 1 "10uF" H 6088 4355 50  0000 L CNN
-F 2 "" H 6000 4400 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" H 6000 4400 50  0001 C CNN
 F 3 "~" H 6000 4400 50  0001 C CNN
 	1    6000 4400
 	1    0    0    -1  
@@ -2055,10 +2055,10 @@ C0 00 00 00 24 08 60 00 00 00 12 04 30 00 00 00 09 02 18 00 00 80 04 01 0C 00 00
 EndData
 $EndBitmap
 $Comp
-L Device:C_Small C6
+L Device:C_Small C5
 U 1 1 5CCBF758
 P 6400 4000
-F 0 "C6" H 6492 4046 50  0000 L CNN
+F 0 "C5" H 6492 4046 50  0000 L CNN
 F 1 "0.1uF" H 6492 3955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 4000 50  0001 C CNN
 F 3 "~" H 6400 4000 50  0001 C CNN
@@ -2066,10 +2066,10 @@ F 3 "~" H 6400 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C7
+L Device:C_Small C6
 U 1 1 5CCBFA7B
 P 6400 4400
-F 0 "C7" H 6492 4446 50  0000 L CNN
+F 0 "C6" H 6492 4446 50  0000 L CNN
 F 1 "0.1uF" H 6492 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 4400 50  0001 C CNN
 F 3 "~" H 6400 4400 50  0001 C CNN
@@ -2077,10 +2077,10 @@ F 3 "~" H 6400 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L Device:C_Small C7
 U 1 1 5CCFA363
 P 6800 4000
-F 0 "C8" H 6892 4046 50  0000 L CNN
+F 0 "C7" H 6892 4046 50  0000 L CNN
 F 1 "0.01uF" H 6892 3955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6800 4000 50  0001 C CNN
 F 3 "~" H 6800 4000 50  0001 C CNN
@@ -2088,10 +2088,10 @@ F 3 "~" H 6800 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C9
+L Device:C_Small C8
 U 1 1 5CCFA687
 P 6800 4400
-F 0 "C9" H 6892 4446 50  0000 L CNN
+F 0 "C8" H 6892 4446 50  0000 L CNN
 F 1 "0.01uF" H 6892 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6800 4400 50  0001 C CNN
 F 3 "~" H 6800 4400 50  0001 C CNN
@@ -2273,17 +2273,6 @@ Wire Wire Line
 	5800 3800 6000 3800
 Wire Wire Line
 	5800 4600 6000 4600
-$Comp
-L Device:CP_Small C1
-U 1 1 5CD91B30
-P 3600 4200
-F 0 "C1" H 3688 4246 50  0000 L CNN
-F 1 "47uF" H 3688 4155 50  0000 L CNN
-F 2 "" H 3600 4200 50  0001 C CNN
-F 3 "~" H 3600 4200 50  0001 C CNN
-	1    3600 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 4300 4400 4400
 Wire Wire Line
@@ -2295,17 +2284,6 @@ Wire Wire Line
 	4400 4100 4400 4000
 Wire Wire Line
 	4400 4000 4800 4000
-$Comp
-L Device:C_Small C3
-U 1 1 5CD99A76
-P 4400 4200
-F 0 "C3" H 4492 4246 50  0000 L CNN
-F 1 "0.1uF" H 4492 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 4200 50  0001 C CNN
-F 3 "~" H 4400 4200 50  0001 C CNN
-	1    4400 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 4300 4000 4400
 Wire Wire Line
@@ -2325,9 +2303,9 @@ L Device:Polyfuse_Small F1
 U 1 1 5CD9D1C8
 P 4800 3500
 F 0 "F1" H 4900 3550 50  0000 L CNN
-F 1 "PTC_500mA" H 4900 3450 50  0000 L CNN
-F 2 "" H 4850 3300 50  0001 L CNN
-F 3 "~" H 4800 3500 50  0001 C CNN
+F 1 "MF-R050" H 4900 3450 50  0000 L CNN
+F 2 "Fuse:Fuse_Littelfuse_395Series" H 4850 3300 50  0001 L CNN
+F 3 "https://static6.arrow.com/aropdfconversion/7a59328f70ba240a12eb44b72a565fb9a071c7ba/mfr.pdf" H 4800 3500 50  0001 C CNN
 	1    4800 3500
 	1    0    0    -1  
 $EndComp
@@ -2339,24 +2317,14 @@ Connection ~ 4800 4000
 $Comp
 L Device:C_Small C2
 U 1 1 5CE965D2
-P 4000 4200
-F 0 "C2" H 4092 4246 50  0000 L CNN
-F 1 "1uF" H 4092 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 4200 50  0001 C CNN
-F 3 "~" H 4000 4200 50  0001 C CNN
-	1    4000 4200
+P 4400 4200
+F 0 "C2" H 4492 4246 50  0000 L CNN
+F 1 "0.1uF" H 4492 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 4200 50  0001 C CNN
+F 3 "~" H 4400 4200 50  0001 C CNN
+	1    4400 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3600 4300 3600 4400
-Wire Wire Line
-	3600 4400 4000 4400
-Connection ~ 4000 4400
-Wire Wire Line
-	3600 4100 3600 4000
-Wire Wire Line
-	3600 4000 4000 4000
-Connection ~ 4000 4000
 Text Notes 1800 1500 0    50   ~ 0
 9-18V IN
 $Comp
@@ -2377,4 +2345,17 @@ Wire Wire Line
 Wire Wire Line
 	5800 4400 5800 4600
 NoConn ~ 4800 4200
+$Comp
+L Device:CP_Small C1
+U 1 1 5CD97891
+P 4000 4200
+F 0 "C1" H 4088 4246 50  0000 L CNN
+F 1 "47uF" H 4088 4155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4000 4200 50  0001 C CNN
+F 3 "~" H 4000 4200 50  0001 C CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 5200 3400 0    50   ~ 0
+500mA PTC
 $EndSCHEMATC
