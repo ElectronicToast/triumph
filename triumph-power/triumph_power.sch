@@ -6,7 +6,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Power Board"
-Date "2019-05-11"
+Date "2019-05-13"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -46,7 +46,7 @@ U 1 1 5CBEA19B
 P 6000 4000
 F 0 "C3" H 6088 4046 50  0000 L CNN
 F 1 "10uF" H 6088 3955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" H 6000 4000 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6000 4000 50  0001 C CNN
 F 3 "~" H 6000 4000 50  0001 C CNN
 	1    6000 4000
 	1    0    0    -1  
@@ -57,7 +57,7 @@ U 1 1 5CBEAEC8
 P 6000 4400
 F 0 "C4" H 6088 4446 50  0000 L CNN
 F 1 "10uF" H 6088 4355 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" H 6000 4400 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6000 4400 50  0001 C CNN
 F 3 "~" H 6000 4400 50  0001 C CNN
 	1    6000 4400
 	1    0    0    -1  
@@ -65,12 +65,12 @@ $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 5CC038D6
-P 7300 4200
-F 0 "#PWR010" H 7300 3950 50  0001 C CNN
-F 1 "GND" H 7300 4050 50  0000 C CNN
-F 2 "" H 7300 4200 50  0001 C CNN
-F 3 "" H 7300 4200 50  0001 C CNN
-	1    7300 4200
+P 7900 4200
+F 0 "#PWR010" H 7900 3950 50  0001 C CNN
+F 1 "GND" H 7900 4050 50  0000 C CNN
+F 2 "" H 7900 4200 50  0001 C CNN
+F 3 "" H 7900 4200 50  0001 C CNN
+	1    7900 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2056,33 +2056,11 @@ C0 00 00 00 24 08 60 00 00 00 12 04 30 00 00 00 09 02 18 00 00 80 04 01 0C 00 00
 EndData
 $EndBitmap
 $Comp
-L Device:C_Small C5
-U 1 1 5CCBF758
-P 6400 4000
-F 0 "C5" H 6492 4046 50  0000 L CNN
-F 1 "0.1uF" H 6492 3955 50  0000 L CNN
-F 2 "triumph:0805_C_HandSoldering" H 6400 4000 50  0001 C CNN
-F 3 "~" H 6400 4000 50  0001 C CNN
-	1    6400 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 5CCBFA7B
-P 6400 4400
-F 0 "C6" H 6492 4446 50  0000 L CNN
-F 1 "0.1uF" H 6492 4355 50  0000 L CNN
-F 2 "triumph:0805_C_HandSoldering" H 6400 4400 50  0001 C CNN
-F 3 "~" H 6400 4400 50  0001 C CNN
-	1    6400 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C7
-U 1 1 5CCFA363
+U 1 1 5CCBF758
 P 6800 4000
 F 0 "C7" H 6892 4046 50  0000 L CNN
-F 1 "0.01uF" H 6892 3955 50  0000 L CNN
+F 1 "0.1uF" H 6892 3955 50  0000 L CNN
 F 2 "triumph:0805_C_HandSoldering" H 6800 4000 50  0001 C CNN
 F 3 "~" H 6800 4000 50  0001 C CNN
 	1    6800 4000
@@ -2090,13 +2068,35 @@ F 3 "~" H 6800 4000 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C_Small C8
-U 1 1 5CCFA687
+U 1 1 5CCBFA7B
 P 6800 4400
 F 0 "C8" H 6892 4446 50  0000 L CNN
-F 1 "0.01uF" H 6892 4355 50  0000 L CNN
+F 1 "0.1uF" H 6892 4355 50  0000 L CNN
 F 2 "triumph:0805_C_HandSoldering" H 6800 4400 50  0001 C CNN
 F 3 "~" H 6800 4400 50  0001 C CNN
 	1    6800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5CCFA363
+P 7200 4000
+F 0 "C9" H 7292 4046 50  0000 L CNN
+F 1 "0.01uF" H 7292 3955 50  0000 L CNN
+F 2 "triumph:0805_C_HandSoldering" H 7200 4000 50  0001 C CNN
+F 3 "~" H 7200 4000 50  0001 C CNN
+	1    7200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5CCFA687
+P 7200 4400
+F 0 "C10" H 7292 4446 50  0000 L CNN
+F 1 "0.01uF" H 7292 4355 50  0000 L CNN
+F 2 "triumph:0805_C_HandSoldering" H 7200 4400 50  0001 C CNN
+F 3 "~" H 7200 4400 50  0001 C CNN
+	1    7200 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2224,11 +2224,7 @@ F 3 "" H 4800 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 4200 6400 4200
-Wire Wire Line
-	6000 4600 6400 4600
-Wire Wire Line
-	6000 3800 6400 3800
+	6400 4200 6800 4200
 Wire Wire Line
 	6000 3800 6000 3900
 Connection ~ 6000 3800
@@ -2243,33 +2239,33 @@ Connection ~ 6000 4600
 Wire Wire Line
 	6000 4600 6000 4700
 Wire Wire Line
-	6400 4100 6400 4200
-Connection ~ 6400 4200
-Wire Wire Line
-	6400 4200 6800 4200
-Wire Wire Line
-	6400 4300 6400 4200
-Wire Wire Line
-	6400 3800 6400 3900
-Connection ~ 6400 3800
-Wire Wire Line
-	6400 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 3900
-Wire Wire Line
-	6400 4600 6400 4500
-Connection ~ 6400 4600
-Wire Wire Line
-	6400 4600 6800 4600
-Wire Wire Line
-	6800 4600 6800 4500
-Wire Wire Line
 	6800 4100 6800 4200
 Connection ~ 6800 4200
 Wire Wire Line
-	6800 4200 7300 4200
+	6800 4200 7200 4200
 Wire Wire Line
-	6800 4200 6800 4300
+	6800 4300 6800 4200
+Wire Wire Line
+	6800 3800 6800 3900
+Connection ~ 6800 3800
+Wire Wire Line
+	6800 3800 7200 3800
+Wire Wire Line
+	7200 3800 7200 3900
+Wire Wire Line
+	6800 4600 6800 4500
+Connection ~ 6800 4600
+Wire Wire Line
+	6800 4600 7200 4600
+Wire Wire Line
+	7200 4600 7200 4500
+Wire Wire Line
+	7200 4100 7200 4200
+Connection ~ 7200 4200
+Wire Wire Line
+	7400 4200 7900 4200
+Wire Wire Line
+	7200 4200 7200 4300
 Wire Wire Line
 	5800 3800 6000 3800
 Wire Wire Line
@@ -2339,7 +2335,7 @@ U 1 1 5CD97891
 P 4000 4200
 F 0 "C1" H 4088 4246 50  0000 L CNN
 F 1 "47uF" H 4088 4155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4000 4200 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4000 4200 50  0001 C CNN
 F 3 "~" H 4000 4200 50  0001 C CNN
 	1    4000 4200
 	1    0    0    -1  
@@ -2359,4 +2355,47 @@ F 3 "https://static6.arrow.com/aropdfconversion/9cd62f2a5f51d6d3b62395271ac638f1
 $EndComp
 Connection ~ 4800 4400
 Connection ~ 4800 4000
+$Comp
+L Device:C_Small C5
+U 1 1 5CF2BA3B
+P 6400 4000
+F 0 "C5" H 6492 4046 50  0000 L CNN
+F 1 "1uF" H 6492 3955 50  0000 L CNN
+F 2 "triumph:0805_C_HandSoldering" H 6400 4000 50  0001 C CNN
+F 3 "~" H 6400 4000 50  0001 C CNN
+	1    6400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5CF2C030
+P 6400 4400
+F 0 "C6" H 6492 4446 50  0000 L CNN
+F 1 "1uF" H 6492 4355 50  0000 L CNN
+F 2 "triumph:0805_C_HandSoldering" H 6400 4400 50  0001 C CNN
+F 3 "~" H 6400 4400 50  0001 C CNN
+	1    6400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3800 6400 3800
+Wire Wire Line
+	6400 3900 6400 3800
+Connection ~ 6400 3800
+Wire Wire Line
+	6400 3800 6800 3800
+Wire Wire Line
+	6400 4200 6400 4300
+Wire Wire Line
+	6400 4100 6400 4200
+Connection ~ 6400 4200
+Wire Wire Line
+	6000 4200 6400 4200
+Wire Wire Line
+	6000 4600 6400 4600
+Wire Wire Line
+	6400 4500 6400 4600
+Connection ~ 6400 4600
+Wire Wire Line
+	6400 4600 6800 4600
 $EndSCHEMATC
