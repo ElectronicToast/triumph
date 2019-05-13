@@ -419,17 +419,6 @@ Text Notes 12000 3400 0    50   ~ 10
 Output Amplitude Control
 Text Label 10900 4200 0    50   ~ 0
 SIG_PREOUT
-$Comp
-L Device:CP_Small C24
-U 1 1 5CCA3234
-P 14500 8700
-F 0 "C24" V 14625 8700 50  0000 C CNN
-F 1 "6.8uF" V 14375 8700 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 14500 8700 50  0001 C CNN
-F 3 "~" H 14500 8700 50  0001 C CNN
-	1    14500 8700
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	14200 8200 14200 8300
 Wire Wire Line
@@ -4334,4 +4323,15 @@ Wire Wire Line
 Connection ~ 7300 3500
 Wire Wire Line
 	7300 3500 7300 3700
+$Comp
+L Device:CP_Small C24
+U 1 1 5CCA3234
+P 14500 8700
+F 0 "C24" V 14375 8700 50  0000 C CNN
+F 1 "6.8uF" V 14625 8700 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 14500 8700 50  0001 C CNN
+F 3 "~" H 14500 8700 50  0001 C CNN
+	1    14500 8700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
