@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:triumph_power-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
@@ -2277,7 +2278,6 @@ Wire Wire Line
 	4400 4300 4400 4400
 Wire Wire Line
 	4400 4400 4800 4400
-Connection ~ 4800 4400
 Wire Wire Line
 	4800 4400 4800 4700
 Wire Wire Line
@@ -2313,7 +2313,6 @@ Wire Wire Line
 	4800 3300 4800 3400
 Wire Wire Line
 	4800 3600 4800 4000
-Connection ~ 4800 4000
 $Comp
 L Device:C_Small C2
 U 1 1 5CE965D2
@@ -2327,17 +2326,6 @@ F 3 "~" H 4400 4200 50  0001 C CNN
 $EndComp
 Text Notes 1800 1500 0    50   ~ 0
 9-18V IN
-$Comp
-L triumph:RS-1212D U1
-U 1 1 5CD93972
-P 5300 4200
-F 0 "U1" H 5300 4700 50  0000 C CNN
-F 1 "RS-1212D" H 5300 4600 50  0000 C CNN
-F 2 "triumph:RS-xxxxD" H 5300 3850 50  0001 C CIN
-F 3 "https://static6.arrow.com/aropdfconversion/9cd62f2a5f51d6d3b62395271ac638f1c729449b/2589778590995298rs-s_d_z.pdf" H 5300 3750 50  0001 C CNN
-	1    5300 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5800 4000 5800 3800
 Wire Wire Line
@@ -2358,4 +2346,17 @@ F 3 "~" H 4000 4200 50  0001 C CNN
 $EndComp
 Text Notes 5200 3400 0    50   ~ 0
 500mA PTC
+$Comp
+L triumph:RS-1212D U1
+U 1 1 5CD8FA7C
+P 5300 4200
+F 0 "U1" H 5300 4750 50  0000 C CNN
+F 1 "RS-1212D" H 5300 4650 50  0000 C CNN
+F 2 "triumph:RS-xxxxD" H 5300 3850 50  0001 C CIN
+F 3 "https://static6.arrow.com/aropdfconversion/9cd62f2a5f51d6d3b62395271ac638f1c729449b/2589778590995298rs-s_d_z.pdf" H 5300 3750 50  0001 C CNN
+	1    5300 4200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 4400
+Connection ~ 4800 4000
 $EndSCHEMATC
