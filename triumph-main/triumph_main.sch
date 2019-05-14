@@ -6,7 +6,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Main Board"
-Date "2019-05-13"
+Date "2019-05-14"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -114,16 +114,6 @@ Text Notes 3400 9400 0    50   ~ 0
 10K POT
 Text Notes 14800 2300 0    50   ~ 0
 BLUE LED ON CONNECTOR
-Text Notes 10300 9700 0    50   ~ 10
-FOOTPRINTS\n\nGENERAL PASSIVES\nELEC CAPS\nTANT CAPS\nALL OPAMPS\nLM211
-Text Notes 11400 9700 0    50   ~ 0
-0805\n5mm D, 2mm P\nB\nDIP8 Socket\nSOIC-8
-Text Notes 10300 9900 0    50   ~ 10
-NOTES
-Text Notes 3500 1700 0    50   ~ 0
-FIND BOARD MOUNT \nFOOTPRINT
-Text Notes 600  10400 0    50   ~ 10
-ALL POT CONN JST PH 3P\n1    END\n2    WIPER\n3    END
 $Comp
 L power:GND #PWR040
 U 1 1 5CC25D71
@@ -637,7 +627,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 14900 5700 50  0001 C CNN
 $EndComp
 Text Notes 8900 6200 0    100  ~ 20
 OUTPUT SELECT
-Text Notes 2800 1900 0    50   ~ 0
+Text Notes 2700 1900 0    50   ~ 0
 Board mount BNC receptacle
 Text Notes 1900 3700 0    50   ~ 10
 Frequency Dials
@@ -3876,8 +3866,6 @@ Text Notes 7500 9700 0    50   ~ 0
 1V NOM AMPLT
 Text Label 8300 4200 0    50   ~ 0
 SIG_SQR_RAW
-Text Notes 10300 10100 0    50   ~ 0
-NE5532P PRELIMINARY\nREPLACE WITH AD826
 Connection ~ 15400 7500
 $Comp
 L Device:R_POT_US RV5
