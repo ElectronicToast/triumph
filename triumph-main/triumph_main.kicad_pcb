@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 70)
+    (drawings 72)
     (tracks 415)
     (zones 0)
     (modules 83)
@@ -1228,7 +1228,7 @@
   )
 
   (module triumph-logos:caltech (layer F.Cu) (tedit 0) (tstamp 5CDD39AB)
-    (at 173.355 121.92)
+    (at 170.18 121.92)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -5692,6 +5692,12 @@
     )
   )
 
+  (gr_text OUTPUT (at 184.15 124.714 90) (layer F.SilkS) (tstamp 5CDDAC25)
+    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  )
+  (gr_text "DUTY CYCLE" (at 187.325 72.898 90) (layer F.SilkS) (tstamp 5CDDAA7F)
+    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  )
   (gr_text PRESCALE (at 146.05 98.425) (layer F.SilkS) (tstamp 5CDD8816)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -5812,7 +5818,7 @@
     (arrow2a (pts (xy 175.26 148.589999) (xy 176.386504 149.17642)))
     (arrow2b (pts (xy 175.26 148.589999) (xy 176.386504 148.003578)))
   )
-  (gr_text "Function Generator Board\nRay Sun\nEE 90" (at 163.83 115.57) (layer F.SilkS)
+  (gr_text "Function Generator Board\nRay Sun\nEE 90" (at 160.655 115.57) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.2032)) (justify left))
   )
   (dimension 86.36 (width 0.15) (layer Dwgs.User)
