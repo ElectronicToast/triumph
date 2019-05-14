@@ -81,7 +81,7 @@
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
-      (viasonmask false)
+      (viasonmask true)
       (mode 1)
       (useauxorigin false)
       (hpglpennumber 1)
@@ -6337,7 +6337,7 @@
   (segment (start 124.206 69.321) (end 124.206 66.421) (width 0.254) (layer F.Cu) (net 41))
   (segment (start 124.206 66.421) (end 122.586 64.801) (width 0.254) (layer F.Cu) (net 41))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5CDBCAF0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5CDBCC8F) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
