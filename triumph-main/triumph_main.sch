@@ -85,23 +85,23 @@ $EndComp
 $Comp
 L power:+12V #PWR09
 U 1 1 5CB77B92
-P 3000 8700
-F 0 "#PWR09" H 3000 8550 50  0001 C CNN
-F 1 "+12V" H 3015 8873 50  0000 C CNN
-F 2 "" H 3000 8700 50  0001 C CNN
-F 3 "" H 3000 8700 50  0001 C CNN
-	1    3000 8700
+P 2700 8700
+F 0 "#PWR09" H 2700 8550 50  0001 C CNN
+F 1 "+12V" H 2715 8873 50  0000 C CNN
+F 2 "" H 2700 8700 50  0001 C CNN
+F 3 "" H 2700 8700 50  0001 C CNN
+	1    2700 8700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-12V #PWR07
 U 1 1 5CB77B9C
-P 2700 8700
-F 0 "#PWR07" H 2700 8800 50  0001 C CNN
-F 1 "-12V" H 2715 8873 50  0000 C CNN
-F 2 "" H 2700 8700 50  0001 C CNN
-F 3 "" H 2700 8700 50  0001 C CNN
-	1    2700 8700
+P 3000 8700
+F 0 "#PWR07" H 3000 8800 50  0001 C CNN
+F 1 "-12V" H 3015 8873 50  0000 C CNN
+F 2 "" H 3000 8700 50  0001 C CNN
+F 3 "" H 3000 8700 50  0001 C CNN
+	1    3000 8700
 	1    0    0    -1  
 $EndComp
 Text Label 2800 9200 0    50   ~ 0
@@ -386,18 +386,14 @@ F 3 "~" H 2400 6100 50  0001 C CNN
 $EndComp
 Text Notes 1800 5700 0    50   ~ 10
 Output Select Dial
-Text Label 1700 6100 0    50   ~ 0
+Text Label 1650 5900 0    50   ~ 0
 SIG_PREOUT
-Text Label 1900 5900 0    50   ~ 0
-SIG_SIN
-Text Label 1900 6000 0    50   ~ 0
-SIG_SQR
 Text Label 1900 6300 0    50   ~ 0
+SIG_SIN
+Text Label 1900 6100 0    50   ~ 0
+SIG_SQR
+Text Label 1900 6200 0    50   ~ 0
 SIG_TRI
-Wire Wire Line
-	1900 5900 2200 5900
-Wire Wire Line
-	1900 6000 2200 6000
 $Comp
 L power:GND #PWR06
 U 1 1 5CCFB5D0
@@ -2980,32 +2976,16 @@ F 3 "~" H 3300 4400 50  0001 C CNN
 $EndComp
 Text Notes 2700 4000 0    50   ~ 0
 Frequency Range Switch
-Text Label 2800 4200 0    50   ~ 0
+Text Label 2700 4200 0    50   ~ 0
 FC_1
-Text Label 2800 4300 0    50   ~ 0
+Text Label 2700 4300 0    50   ~ 0
 FC_2
-Text Label 2800 4400 0    50   ~ 0
-FC_COM
-Wire Wire Line
-	2800 4200 3100 4200
-Wire Wire Line
-	2800 4300 3100 4300
-Wire Wire Line
-	2800 4400 3100 4400
 Text Notes 2400 5100 0    50   ~ 0
 SP4T PANEL MOUNT ROTARY SWITCH
-Text Label 2800 4500 0    50   ~ 0
-FC_COM
-Wire Wire Line
-	2800 4500 3100 4500
-Text Label 2800 4600 0    50   ~ 0
+Text Label 2700 4400 0    50   ~ 0
 FC_3
-Wire Wire Line
-	2800 4600 3100 4600
-Text Label 2800 4700 0    50   ~ 0
+Text Label 2700 4500 0    50   ~ 0
 FC_4
-Wire Wire Line
-	2800 4700 3100 4700
 $Comp
 L power:GND #PWR014
 U 1 1 5CF48AD7
@@ -3055,9 +3035,9 @@ Text Notes 3400 4200 0    50   ~ 0
 10 nF
 Text Notes 3400 4300 0    50   ~ 0
 0.1 uF
-Text Notes 3400 4600 0    50   ~ 0
+Text Notes 3400 4400 0    50   ~ 0
 1 uF
-Text Notes 3400 4700 0    50   ~ 0
+Text Notes 3400 4500 0    50   ~ 0
 10 uF
 Wire Wire Line
 	1900 6400 2200 6400
@@ -3065,11 +3045,6 @@ Wire Wire Line
 	1900 6300 2200 6300
 Text Label 1900 6400 0    50   ~ 0
 SIG_DC
-Wire Wire Line
-	1700 6100 2200 6100
-Wire Wire Line
-	2200 6200 2200 6100
-Connection ~ 2200 6100
 Text Label 5100 6100 0    50   ~ 0
 DC
 $Comp
@@ -4329,4 +4304,28 @@ Wire Wire Line
 Connection ~ 11800 4200
 Wire Wire Line
 	11800 4200 12100 4200
+Wire Wire Line
+	1900 6100 2200 6100
+Wire Wire Line
+	1900 6200 2200 6200
+Wire Wire Line
+	1650 5900 2200 5900
+Wire Wire Line
+	2200 6000 2200 5900
+Connection ~ 2200 5900
+Wire Wire Line
+	3100 4700 3100 4600
+Connection ~ 3100 4700
+Wire Wire Line
+	2700 4700 3100 4700
+Text Label 2700 4700 0    50   ~ 0
+FC_COM
+Wire Wire Line
+	2700 4200 3100 4200
+Wire Wire Line
+	2700 4300 3100 4300
+Wire Wire Line
+	2700 4400 3100 4400
+Wire Wire Line
+	2700 4500 3100 4500
 $EndSCHEMATC
