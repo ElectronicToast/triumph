@@ -2794,17 +2794,6 @@ Text Label 6600 2700 0    50   ~ 0
 FR_1
 Text Label 6500 2700 2    50   ~ 0
 FR_2
-$Comp
-L Amplifier_Operational:TL072 U2
-U 2 1 5CF9C237
-P 6300 4000
-F 0 "U2" H 6300 3800 50  0000 C CNN
-F 1 "NE5532AP" H 6300 3700 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6300 4000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6300 4000 50  0001 C CNN
-	2    6300 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6000 3900 5900 3900
 $Comp
@@ -2880,12 +2869,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small_US R5
 U 1 1 5D2C0683
-P 5300 2400
-F 0 "R5" V 5400 2400 50  0000 C CNN
-F 1 "47K" V 5200 2400 50  0000 C CNN
-F 2 "triumph:0805_R_HandSoldering" H 5300 2400 50  0001 C CNN
-F 3 "~" H 5300 2400 50  0001 C CNN
-	1    5300 2400
+P 5300 2200
+F 0 "R5" V 5400 2200 50  0000 C CNN
+F 1 "47K" V 5200 2200 50  0000 C CNN
+F 2 "triumph:0805_R_HandSoldering" H 5300 2200 50  0001 C CNN
+F 3 "~" H 5300 2200 50  0001 C CNN
+	1    5300 2200
 	0    -1   -1   0   
 $EndComp
 Text Notes 1200 4000 0    50   ~ 0
@@ -2904,9 +2893,9 @@ F 3 "~" H 6200 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5200 2400 5000 2400
+	5200 2200 5000 2200
 Wire Wire Line
-	5000 2400 5000 1300
+	5000 2200 5000 1300
 Wire Wire Line
 	2700 9300 3100 9300
 Wire Wire Line
@@ -2977,20 +2966,14 @@ FC_4
 $Comp
 L power:GND #PWR014
 U 1 1 5CF48AD7
-P 5800 2100
-F 0 "#PWR014" H 5800 1850 50  0001 C CNN
-F 1 "GND" H 5800 1950 50  0000 C CNN
-F 2 "" H 5800 2100 50  0001 C CNN
-F 3 "" H 5800 2100 50  0001 C CNN
-	1    5800 2100
+P 5800 2300
+F 0 "#PWR014" H 5800 2050 50  0001 C CNN
+F 1 "GND" H 5800 2150 50  0000 C CNN
+F 2 "" H 5800 2300 50  0001 C CNN
+F 3 "" H 5800 2300 50  0001 C CNN
+	1    5800 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 2200 5900 2200
-Wire Wire Line
-	5900 2200 5900 2100
-Wire Wire Line
-	5900 2100 5800 2100
 Text Label 6400 3100 0    50   ~ 0
 FC_1
 Text Label 6400 3300 0    50   ~ 0
@@ -3004,14 +2987,9 @@ Wire Wire Line
 Text Label 6000 3400 0    50   ~ 0
 FC_COM
 Wire Wire Line
-	5400 2400 5600 2400
-Wire Wire Line
 	6100 1700 5600 1700
 Wire Wire Line
-	5600 1700 5600 2400
-Connection ~ 5600 2400
-Wire Wire Line
-	5600 2400 6000 2400
+	5600 1700 5600 2200
 Wire Wire Line
 	6700 1700 6700 2300
 Wire Wire Line
@@ -4414,4 +4392,26 @@ Wire Wire Line
 	14300 1400 14300 1300
 Text Notes 14000 1000 0    50   ~ 10
 Power
+$Comp
+L Amplifier_Operational:TL072 U2
+U 2 1 5CF9C237
+P 6300 4000
+F 0 "U2" H 6300 4200 50  0000 C CNN
+F 1 "NE5532AP" H 6300 4300 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6300 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6300 4000 50  0001 C CNN
+	2    6300 4000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5400 2200 5600 2200
+Connection ~ 5600 2200
+Wire Wire Line
+	5600 2200 6000 2200
+Wire Wire Line
+	5800 2300 5900 2300
+Wire Wire Line
+	5900 2300 5900 2400
+Wire Wire Line
+	5900 2400 6000 2400
 $EndSCHEMATC
