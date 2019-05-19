@@ -6,7 +6,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Main Board"
-Date "2019-05-14"
+Date "2019-05-19"
 Rev "A"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -2983,7 +2983,7 @@ FC_3
 Text Label 6400 3700 0    50   ~ 0
 FC_4
 Wire Wire Line
-	6400 3100 6800 3100
+	6400 3100 6700 3100
 Text Label 6000 3400 0    50   ~ 0
 FC_COM
 Wire Wire Line
@@ -3861,45 +3861,34 @@ USE LOWEST VALUE POSSIBLE
 $Comp
 L Device:C_Small C3
 U 1 1 5CE10D0E
-P 6900 3100
-F 0 "C3" V 6775 3100 50  0000 C CNN
-F 1 "10uF" V 7025 3100 50  0000 C CNN
-F 2 "triumph:0805_C_HandSoldering" H 6900 3100 50  0001 C CNN
-F 3 "~" H 6900 3100 50  0001 C CNN
-	1    6900 3100
+P 6800 3100
+F 0 "C3" V 6675 3100 50  0000 C CNN
+F 1 "10uF" V 6925 3100 50  0000 C CNN
+F 2 "triumph:0805_C_HandSoldering" H 6800 3100 50  0001 C CNN
+F 3 "~" H 6800 3100 50  0001 C CNN
+	1    6800 3100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 5CE11524
-P 7200 3300
-F 0 "C5" V 7075 3300 50  0000 C CNN
-F 1 "1uF" V 7325 3300 50  0000 C CNN
-F 2 "triumph:0805_C_HandSoldering" H 7200 3300 50  0001 C CNN
-F 3 "~" H 7200 3300 50  0001 C CNN
-	1    7200 3300
+P 7100 3300
+F 0 "C5" V 6975 3300 50  0000 C CNN
+F 1 "1uF" V 7225 3300 50  0000 C CNN
+F 2 "triumph:0805_C_HandSoldering" H 7100 3300 50  0001 C CNN
+F 3 "~" H 7100 3300 50  0001 C CNN
+	1    7100 3300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C4
 U 1 1 5CE117DD
-P 6900 3500
-F 0 "C4" V 6775 3500 50  0000 C CNN
-F 1 "0.1uF" V 7025 3500 50  0000 C CNN
-F 2 "triumph:0805_C_HandSoldering" H 6900 3500 50  0001 C CNN
-F 3 "~" H 6900 3500 50  0001 C CNN
-	1    6900 3500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 5CE119DF
-P 7200 3700
-F 0 "C6" V 7075 3700 50  0000 C CNN
-F 1 "10nF" V 7325 3700 50  0000 C CNN
-F 2 "triumph:0805_C_HandSoldering" H 7200 3700 50  0001 C CNN
-F 3 "~" H 7200 3700 50  0001 C CNN
-	1    7200 3700
+P 6800 3500
+F 0 "C4" V 6675 3500 50  0000 C CNN
+F 1 "0.1uF" V 6925 3500 50  0000 C CNN
+F 2 "triumph:0805_C_HandSoldering" H 6800 3500 50  0001 C CNN
+F 3 "~" H 6800 3500 50  0001 C CNN
+	1    6800 3500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -3907,11 +3896,11 @@ Wire Wire Line
 Wire Wire Line
 	5500 2700 5500 3900
 Wire Wire Line
-	6400 3500 6800 3500
+	6400 3500 6700 3500
 Wire Wire Line
-	6400 3300 7100 3300
+	6400 3300 7000 3300
 Wire Wire Line
-	6400 3700 7100 3700
+	6400 3700 7000 3700
 Wire Wire Line
 	6600 4000 7300 4000
 Wire Wire Line
@@ -3919,22 +3908,12 @@ Wire Wire Line
 Connection ~ 7300 4000
 Wire Wire Line
 	7300 4000 7900 4000
-Connection ~ 7300 3300
 Wire Wire Line
-	7300 3300 7300 3500
-Connection ~ 7300 3700
-Wire Wire Line
-	7300 3700 7300 4000
-Wire Wire Line
-	7000 3100 7300 3100
+	6900 3100 7300 3100
 Connection ~ 7300 3100
 Wire Wire Line
-	7300 3100 7300 3300
-Wire Wire Line
-	7000 3500 7300 3500
+	6900 3500 7300 3500
 Connection ~ 7300 3500
-Wire Wire Line
-	7300 3500 7300 3700
 Wire Wire Line
 	14200 7500 14200 7100
 $Comp
@@ -4412,4 +4391,29 @@ Text Notes 9950 2700 0    50   ~ 0
 TRIM
 Text Notes 9950 4700 0    50   ~ 0
 TRIM
+$Comp
+L Device:C_Small C6
+U 1 1 5CE119DF
+P 7100 3700
+F 0 "C6" V 6975 3700 50  0000 C CNN
+F 1 "0.01uF" V 7225 3700 50  0000 C CNN
+F 2 "triumph:0805_C_HandSoldering" H 7100 3700 50  0001 C CNN
+F 3 "~" H 7100 3700 50  0001 C CNN
+	1    7100 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3100 7300 3300
+Wire Wire Line
+	7300 3500 7300 3700
+Wire Wire Line
+	7200 3700 7300 3700
+Connection ~ 7300 3700
+Wire Wire Line
+	7300 3700 7300 4000
+Wire Wire Line
+	7200 3300 7300 3300
+Connection ~ 7300 3300
+Wire Wire Line
+	7300 3300 7300 3500
 $EndSCHEMATC
