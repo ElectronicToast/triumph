@@ -1,0 +1,42 @@
+Date,5/19/2019,,,,,
+,,,,,,
+Power Board:,,,,,,
+Component Count:,15,,,,,
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor
+"C2, C1, ",2,47uF,CP_Small,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,"Polarized capacitor, small symbol",In House
+"C4, C5, ",2,10uF,CP_Small,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,"Polarized capacitor, small symbol",In House
+"C6, C7, ",2,1uF,C_Small,triumph:0805_C_HandSoldering,"Unpolarized capacitor, small symbol",Arrow
+"C8, C9, C3, ",3,0.1uF,C_Small,triumph:0805_C_HandSoldering,"Unpolarized capacitor, small symbol",Arrow
+"C10, C11, ",2,0.01uF,C_Small,triumph:0805_C_HandSoldering,"Unpolarized capacitor, small symbol",Arrow
+"F1, ",1,MF-R050,Polyfuse_Small,Fuse:Fuse_Littelfuse_395Series,"Resettable fuse, polymeric positive temperature coefficient, small symbol",Arrow
+"J2, J1, ",2,JST_XH_vert_01x04,Conn_01x04,Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",In House
+"U1, ",1,RS-1212D,RS-1212D,triumph:RS-xxxxD,Dual +/-12V Regulated Converter,In House
+,,,,,,
+Main Board:,,,,,,
+Component Count:,78,,,,,
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor
+"C3, C22, C26, C19, C23, ",5,10uF,C_Small,triumph:0805_C_HandSoldering,"Unpolarized capacitor, small symbol",Arrow
+"C5, C9, C10, ",3,1uF,C_Small,triumph:0805_C_HandSoldering,"Unpolarized capacitor, small symbol",Arrow
+"C7, C8, ",2,10uF,CP_Small,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,"Polarized capacitor, small symbol",In House
+"C15, C16, C6, ",3,0.01uF,C_Small,triumph:0805_C_HandSoldering,"Unpolarized capacitor, small symbol",Arrow
+"C21, C20, C24, C25, C2, C1, C14, C13, C18, C17, C4, C11, C12, ",13,0.1uF,C_Small,triumph:0805_C_HandSoldering,"Unpolarized capacitor, small symbol",Arrow
+"D2, D1, ",2,1N4148,D_Small_ALT,triumph:D_SOD-123_HandSoldering,"Diode, small symbol, filled shape",Arrow
+"D3, D4, ",2,LED_B,LED_Small_ALT,triumph:LED_1206_HandSoldering,"Light emitting diode, small symbol, filled shape",Arrow
+"J1, J10, ",2,JST_XH_vert_01x04,Conn_01x04,Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",In House
+"J4, J7, ",2,JST_PH_vert_01x06,Conn_01x06,Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",In House
+"J5, ",1,Molex_73100-0154,Conn_Coaxial,triumph:Conn_BNC_73100-0154,"coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)",Arrow
+"J9, J8, J3, J2, J6, ",5,JST_PH_vert_01x03,Conn_01x03,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",In House
+"JP1, JP2, ",2,SJ_OPEN,SolderJumper_2_Open,Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,"Solder Jumper, 2-pole, open",N/A
+"Q1, ",1,J310,Q_NJFET_DSG,Package_TO_SOT_THT:TO-92_Inline_Wide,"N-JFET transistor, drain/source/gate",In House
+"R2, R1, R4, R3, R22, R23, ",6,0,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",G. G.
+"R6, ",1,1K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"R8, R9, R10, R11, ",4,100K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"R12, ",1,5K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"R14, R13, ",2,68,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"R19, R17, R18, R5, ",4,47K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"R24, R15, R16, R20, R21, ",5,10K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"R25, R7, ",2,50,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"RV2, RV1, RV3, RV4, ",4,10K,R_POT_US,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical,"Potentiometer, US symbol",Arrow
+"RV5, ",1,200K,R_POT_US,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical,"Potentiometer, US symbol",Digi-Key
+"U1, ",1,LM211P,LM311,Package_DIP:DIP-8_W7.62mm_Socket_LongPads,"Voltage Comparator, DIP-8/SOIC-8/SSOP-8",In House
+"U4, U5, U2, U3, ",4,AD826,TL072,Package_DIP:DIP-8_W7.62mm_Socket_LongPads,"Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",In House
