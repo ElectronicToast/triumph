@@ -2667,17 +2667,6 @@ C0 00 00 00 24 08 60 00 00 00 12 04 30 00 00 00 09 02 18 00 00 80 04 01 0C 00 00
 94 B4 3A 6F 3F 87 ED 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-$Comp
-L Device:R_Small_US R25
-U 1 1 5CC5F4BC
-P 15600 4100
-F 0 "R25" V 15500 4050 50  0000 L CNN
-F 1 "50" V 15700 4050 50  0000 L CNN
-F 2 "triumph:0805_R_HandSoldering" H 15600 4100 50  0001 C CNN
-F 3 "~" H 15600 4100 50  0001 C CNN
-	1    15600 4100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	15300 4100 15500 4100
 Text Notes 5800 8200 0    50   ~ 0
@@ -3052,17 +3041,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm311.pdf" H 6300 6700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 7000 6300 7000
-$Comp
-L Device:R_Small_US R12
-U 1 1 5D106636
-P 6700 5800
-F 0 "R12" H 6768 5846 50  0000 L CNN
-F 1 "5K" H 6768 5755 50  0000 L CNN
-F 2 "triumph:0805_R_HandSoldering" H 6700 5800 50  0001 C CNN
-F 3 "~" H 6700 5800 50  0001 C CNN
-	1    6700 5800
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR019
 U 1 1 5D11AA09
@@ -4416,4 +4394,26 @@ Wire Wire Line
 Connection ~ 7300 3300
 Wire Wire Line
 	7300 3300 7300 3500
+$Comp
+L Device:R_Small_US R25
+U 1 1 5CC5F4BC
+P 15600 4100
+F 0 "R25" V 15500 4050 50  0000 L CNN
+F 1 "50" V 15700 4050 50  0000 L CNN
+F 2 "triumph:0805_R_HandSoldering" H 15600 4100 50  0001 C CNN
+F 3 "~" H 15600 4100 50  0001 C CNN
+	1    15600 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R12
+U 1 1 5D106636
+P 6700 5800
+F 0 "R12" H 6768 5846 50  0000 L CNN
+F 1 "5K" H 6768 5755 50  0000 L CNN
+F 2 "triumph:0805_R_HandSoldering" H 6700 5800 50  0001 C CNN
+F 3 "~" H 6700 5800 50  0001 C CNN
+	1    6700 5800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

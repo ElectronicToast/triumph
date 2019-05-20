@@ -29,14 +29,15 @@ Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor
 "JP1, JP2, ",2,SJ_OPEN,SolderJumper_2_Open,Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,"Solder Jumper, 2-pole, open",N/A
 "Q1, ",1,J310,Q_NJFET_DSG,Package_TO_SOT_THT:TO-92_Inline_Wide,"N-JFET transistor, drain/source/gate",In House
 "R2, R1, R4, R3, R22, R23, ",6,0,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",G. G.
-"R6, ",1,1K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"R6, ",1,1K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",In House
 "R8, R9, R10, R11, ",4,100K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
 "R12, ",1,5K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
 "R14, R13, ",2,68,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
 "R19, R17, R18, R5, ",4,47K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
-"R24, R15, R16, R20, R21, ",5,10K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
+"R24, R15, R16, R20, R21, ",5,10K,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",In House
 "R25, R7, ",2,50,R_Small_US,triumph:0805_R_HandSoldering,"Resistor, small US symbol",Arrow
 "RV2, RV1, RV3, RV4, ",4,10K,R_POT_US,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical,"Potentiometer, US symbol",Arrow
 "RV5, ",1,200K,R_POT_US,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical,"Potentiometer, US symbol",Digi-Key
 "U1, ",1,LM211P,LM311,Package_DIP:DIP-8_W7.62mm_Socket_LongPads,"Voltage Comparator, DIP-8/SOIC-8/SSOP-8",In House
 "U4, U5, U2, U3, ",4,AD826,TL072,Package_DIP:DIP-8_W7.62mm_Socket_LongPads,"Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",In House
+N/A,5,DIP-8 socket,,,,In House
