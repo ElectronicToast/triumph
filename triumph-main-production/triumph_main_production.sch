@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:triumph_main_production-cache
 EELAYER 29 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Triumph Analog Function Generator - Main Board"
-Date "2019-06-03"
+Date "2019-06-12"
 Rev "B"
 Comp "California Institute of Technology"
 Comment1 "Analog Electronics Project Laboratory"
@@ -2224,8 +2225,6 @@ DC 83 BB EF C6 DD 77 A3 68 51 1B 5A 12 11 79 19 C7 27 22 22 22 17 CA CC 44 5A DA
 44 74 27 FE 1F 20 F3 5C FE E5 76 2E 42 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 5800 1000 0    50   ~ 0
-Integrator with Schmitt feedback
 Text Notes 14700 6000 0    50   ~ 0
 Not used
 $Bitmap
@@ -3192,8 +3191,6 @@ Wire Wire Line
 Connection ~ 6100 8700
 Wire Wire Line
 	6700 6700 7300 6700
-Text Notes 6900 6900 0    50   ~ 0
-12V AMPLT
 Text Notes 10200 2400 0    50   ~ 0
 SCALE TO\n1V AMPLT
 Text Notes 7500 3800 0    50   ~ 0
@@ -3266,7 +3263,7 @@ L Device:R_Small_US R7
 U 1 1 5CE5067E
 P 5900 2700
 F 0 "R7" V 6000 2700 50  0000 C CNN
-F 1 "50" V 5800 2700 50  0000 C CNN
+F 1 "220" V 5800 2700 50  0000 C CNN
 F 2 "triumph:0805_R_HandSoldering" H 5900 2700 50  0001 C CNN
 F 3 "~" H 5900 2700 50  0001 C CNN
 	1    5900 2700
@@ -3312,8 +3309,6 @@ Wire Wire Line
 	14500 4500 14800 4500
 Wire Wire Line
 	15000 4500 15300 4500
-Text Notes 7100 5900 0    50   ~ 0
-(24)^2 / R SHOULD NOT\nEXCEED POWER RATING
 $Comp
 L Device:R_Small_US R11
 U 1 1 5CDDAB91
@@ -4398,29 +4393,18 @@ L Device:R_Small_US R25
 U 1 1 5CC5F4BC
 P 15600 4100
 F 0 "R25" V 15500 4050 50  0000 L CNN
-F 1 "50" V 15700 4050 50  0000 L CNN
+F 1 "0" V 15700 4050 50  0000 L CNN
 F 2 "triumph:0805_R_HandSoldering" H 15600 4100 50  0001 C CNN
 F 3 "~" H 15600 4100 50  0001 C CNN
 	1    15600 4100
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R12
-U 1 1 5D106636
-P 6700 5800
-F 0 "R12" H 6768 5846 50  0000 L CNN
-F 1 "5K" H 6768 5755 50  0000 L CNN
-F 2 "triumph:0805_R_HandSoldering" H 6700 5800 50  0001 C CNN
-F 3 "~" H 6700 5800 50  0001 C CNN
-	1    6700 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
+L Device:C_Small C27
 U 1 1 5CF6911F
 P 7300 4200
-F 0 "C?" H 7392 4246 50  0000 L CNN
-F 1 "33pF" H 7392 4155 50  0000 L CNN
+F 0 "C27" H 7392 4246 50  0000 L CNN
+F 1 "27pF" H 7392 4155 50  0000 L CNN
 F 2 "triumph:0805_C_HandSoldering" H 7300 4200 50  0001 C CNN
 F 3 "~" H 7300 4200 50  0001 C CNN
 	1    7300 4200
@@ -4441,4 +4425,23 @@ Wire Wire Line
 	7300 4400 7300 4300
 Wire Wire Line
 	7300 4100 7300 4000
+$Comp
+L Device:R_Small_US R12
+U 1 1 5D106636
+P 6700 5800
+F 0 "R12" H 6768 5846 50  0000 L CNN
+F 1 "5K" H 6768 5755 50  0000 L CNN
+F 2 "triumph:0805_R_HandSoldering" H 6700 5800 50  0001 C CNN
+F 3 "~" H 6700 5800 50  0001 C CNN
+	1    6700 5800
+	1    0    0    -1  
+$EndComp
+Text Notes 10650 9650 0    50   ~ 10
+NOTES\n\nTHIS SCHEMATIC REVISION REFLECTS\nACTUAL PRODUCTION CIRCUIT
+Text Notes 5800 1000 0    50   ~ 0
+Integrator with Schmitt feedback
+Text Notes 6900 6900 0    50   ~ 0
+12V AMPLT
+Text Notes 7100 5900 0    50   ~ 0
+(24)^2 / R SHOULD NOT\nEXCEED POWER RATING
 $EndSCHEMATC
