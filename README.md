@@ -13,6 +13,13 @@ Power is supplied via 9 – 18 VDC input through a barrel jack connector on the 
 
 A blue indicator LED on the front of the device indicates if the function generator is powered.
 
+## Photos
+
+![front](img/front.jpg)
+![back](img/back.jpg)
+![top](img/top.jpg)
+![int](img/int.jpg)
+
 ## Design
 
 An integrator with Schmitt feedback is used to generate a base triangle wave, which is passed to a Middlebrook-Richer JFET converter to create a sine wave and also a comparator to create a square wave. A positive feedback circuit associated to the comparator provides square wave duty cycle control. A final output stage provides amplitude and offset control. This general architecture achieves a good balance among simplicity, reliability, and performance.
