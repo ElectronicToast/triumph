@@ -1,11 +1,8 @@
-# triumph
-Analog function generator project for EE 90 at Caltech
-
-&nbsp;
-
 ![logo](img/logo-crop.png)
 
-&nbsp;
+![release](https://img.shields.io/github/v/release/electronictoast/ruddblink?include_prereleases) ![license](https://img.shields.io/github/license/electronictoast/ruddblink) ![madewith](https://img.shields.io/badge/made%20with-KiCad-blue)
+
+Analog function generator project for EE 90 at Caltech
 
 ## Description
 
