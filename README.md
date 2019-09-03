@@ -1,6 +1,6 @@
 ![logo](img/logo-crop.png)
 
-![release](https://img.shields.io/github/v/release/electronictoast/ruddblink?include_prereleases) ![license](https://img.shields.io/github/license/electronictoast/ruddblink) ![madewith](https://img.shields.io/badge/made%20with-KiCad-blue)
+![release](https://img.shields.io/github/v/release/electronictoast/triumph?include_prereleases) ![license](https://img.shields.io/github/license/electronictoast/triumph) ![madewith](https://img.shields.io/badge/made%20with-KiCad-blue)
 
 Analog function generator project for EE 90 at Caltech
 
